@@ -1,0 +1,137 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+<!--BREADCRUMS DIRECTIVE-->
+<startupdetailheader data="startupdetail"></startupdetailheader>
+
+<!--**********RATINGBOADRD********************-->
+<section>
+	<div class="container cnt">
+ 	 	<div class="row">
+   			 <div class="col s12 ">
+   			  	<div class="lmn-box " style="min-height:150px;">
+	   			 	 <form action="#">
+					    <p class="range-field">
+					     <div class="lmn-timelineholder"><br>
+			            	<timeline timelinedata="startupdetail"></timeline>
+		            	</div>
+					    </p>
+					  </form>
+				 </div>
+   			 </div>
+   			 <div class="col s12 m12 "><br>
+   			 <p class="lmn-wtstgstp">At What Stage is Your StartUp Right Now?</p>
+   				 <div class="lmn-box ">
+   			 	 	<div class="row">
+					    <div class="col s12">
+					      <ul class="tabs lmn-tabs">
+					        <li class="tab lmn-tab col s3"><a  class="active" href="#test1">Problem Solution Fit</a></li>
+					        <li class="tab lmn-tab col s3"><a href="#test2">Product Market Fit</a></li>
+					        <li class="tab lmn-tab col s3"><a href="#test4">Startup Investor Fit</a></li>
+					      </ul>
+					    </div>
+					    <div id="test1" class="col s12 mt10-lmn">
+						    <div class="col s2 mt10-lmn">
+						    	 <div class="c100 p100 large">
+				                    <span>7/10</span>
+				                    <div class="slice">
+				                        <div class="bar"></div>
+				                        <div class="fill"></div>
+				                    </div>
+				                </div>
+						    </div>
+						    <div class="col s4">
+						    	<p>Problem Worth Solving?</p>
+						    	<p>Customers need your solution?</p>
+								
+						    </div>
+						    <div class="col s6 " >
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+						    </div>
+					    </div>
+					    <div id="test2" class="col s12">
+					    	 <div class="col s2 mt10-lmn">
+						    	 <div class="c100 p100 large">
+				                    <span>6/10</span>
+				                    <div class="slice">
+				                        <div class="bar"></div>
+				                        <div class="fill"></div>
+				                    </div>
+				                </div>
+						    </div>
+						    <div class="col s4">
+						    	<p>Acquiring Customers</p>
+						    	<p>Activating Customers</p>
+						    	<p>Retaining Customers</p>
+						    	<p>Referring Customers</p>
+						    	<p>Paying Customers</p>
+						    </div>
+						   <div class="col s6">
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+						    </div>
+					    </div>
+					    <div id="test4" class="col s12">
+					    		 <div class="col s2 mt10-lmn">
+						    	 <div class="c100 p100 large">
+				                    <span>6/10</span>
+				                    <div class="slice">
+				                        <div class="bar"></div>
+				                        <div class="fill"></div>
+				                    </div>
+				                </div>
+						    </div>
+						    <div class="col s4">
+						    	<p>Founder Values Alignment</p>
+						    	<p>Core Team Strength</p>
+						    	<p>Market Opportunity Potential</p>
+						    	<p>Return on Investment Potential</p>
+						    </div>
+						    <div class="col s6 ">
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+								<div class="lmn-stars"><input-stars ng-model="prop2" max="10" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+						    </div>
+
+					    </div>
+					  </div>
+   			 	</div>
+   			 </div>
+   			<!--   <div class="col s12 m3 ">
+	   			 	 <div class="card lmnrat-arf-text">
+				            <div class="card-content lmnrat-arfictbg1">
+				            	<center><h6 class="lmn-get">Get Mentor Feedback and Queries</h6></center>
+				              <center><a class="waves-effect waves-light btn btn-green lnm-getstartbtn">Get Advices</a></center>
+				            </div>
+				     </div>
+   			 </div> -->
+   		</div>
+   	</div>
+</section>
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+	/*var slider = document.getElementById('test5');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+});*/
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+
+  });
+
+</script>

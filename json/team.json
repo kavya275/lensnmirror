@@ -1,0 +1,77 @@
+{
+  "response": "success",
+  "result": "yes",
+  "resultData": [
+    {
+      "email": "kavya.5683@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "kavya",
+      "member_designation": "BE",
+      "about_member": "good girl as always and so sweet and papchiii good girl as always and so sweet and papchiiigood girl as always and so sweet and papchiiigood girl as always and so sweet and papchiii",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    },
+    {
+      "email": "naveen@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "naveen",
+      "member_designation": "BE",
+      "about_member": "bad boy as always  bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always bad boy as always ",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    },
+    {
+      "email": "varshitha.5683@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "varshitha",
+      "member_designation": "BE",
+      "about_member": "dabba girl as always dabba girl as alwaysdabba girl as alwaysdabba girl as alwaysdabba girl as alwaysdabba girl as always ",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    },
+    {
+      "email": "kavya.5683@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "kavya",
+      "member_designation": "BE",
+      "about_member": "good girl as always and so sweet and papchiii",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    },{
+      "email": "kavya.5683@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "kavya",
+      "member_designation": "BE",
+      "about_member": "good girl as always and so sweet and papchiii good girl as always and so sweet and papchiiigood girl as always and so sweet and papchiii",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    },
+    {
+      "email": "varshitha.5683@gmail.com",
+      "session_id": "",
+      "role": "",
+      "startup_seo_url": "glukocare",
+      "member_id": "",
+      "member_name": "varshitha",
+      "member_designation": "BE",
+      "about_member": "dabba girl as always dabba girl as alwaysdabba girl as alwaysdabba girl as alwaysdabba girl as alwaysdabba girl as always ",
+      "member_profile_pic": "http://www.lensnmirror.com/demo/image_uploads/default-startup-logo.png",
+      "message": "Add StartUp Team member successful.."
+    }
+  ]
+}

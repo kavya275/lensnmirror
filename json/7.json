@@ -1,0 +1,16 @@
+{
+  "idea": "Funtube",
+  "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/funtube.jpg",
+  "rating":"60",
+  "tag_line": "Entertainment during boring commute",
+  "storyboard": [
+    {
+      "problem_description": "Captive audience waiting to kill time in places like train, bus, airplane, train/bus stations, hospital receptions, etc.’",
+      "target_customers": "Ladies (graduates / post graduates) who are interested in pursuing part time job opportunities based on their skills/interests.The ladies might have prior industry experience but not in full time jobs currently.",
+      "solution_summary": "FunTube is a Wi-Fi hotspot based entertainment platform.FunTube offers smart phone delivered on-demand video, news,network games, and Specialized content.",
+      "value_proposition": "Consumers: On-demand Infotainment without paying for the internet bandwidth.Hotspot Partners: New Revenue Opportunity & Increased Customer Satisfaction.",
+      "unfair": "unfair",
+      "monetization": "monetization"
+    }
+  ]
+}

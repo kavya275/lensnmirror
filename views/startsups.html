@@ -1,0 +1,66 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+<section class="lnm-startups">
+    <div class="container lmn-box cnt">
+        <div class="row">
+           <!-- <div class="col s12">
+                <div class="lmn-tophdall">Startup Pitches</div>
+            </div>-->
+            <form  ng-submit="startupsearch(user)">
+                <div class="input-field col s10 offset-s1">
+                    <input id="icon_prefix2" type="text" class="validate" placeholder="Search Title OR Description" ng-model="user.title">
+                 </div>
+                <div class="input-field col s1">
+                    <button type="submit"  class="waves-effect btn-flat lnm-btnlft"> <i class="fa fa-search lmn-stpicon" aria-hidden="true"></i></button>
+                </div>
+            </form>
+            <div class="col s12">
+                <div class="owl-carousel" data-options="{items:5,pagination: false,navigation: true}" id="owl-demo">
+                    <a href="{{href}}startsups/"><div class="item lmn-catitem">All</div></a>
+                    <div class="item" ng-repeat="cat in categories" owl-carousel>
+
+                        <a href="{{href}}startsups/{{cat.category_seo_url}}"><div class="lmn-categorycur">{{cat.category_name}}</div></a></div>
+                </div>
+                <div class="col s12" ng-if="startups.length>0">
+                    <div class="col s12 m6 l4" ng-repeat="startuplist in startups">
+                        <startup-pitch-list startupdata="startuplist" href="urls"></startup-pitch-list>
+                    </div>
+                </div>
+                <div ng-if="startups.length==0">NO STARTUP FOUND</div>
+            </div>
+            <!-- <i class="fa fa-pencil" aria-hidden="true"></i>
+                <div class="row">
+                      <div class="col l3 m3 ">
+                          <div class="something">
+                              <label>My Name is something</label>
+                              <div class="editable_text">
+                                  <div class="input_text">
+                                      <input type="text" value="My Name is something"/>
+                                  </div>
+                                  <div class="form_buttons" style="background-color: red;padding:15px;">
+                                      <div class="correct edit_button">C</div>
+                                      <div class="wrong edit_button">X</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+        </div>
+        </div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".something").click(function () {
+            $(this).addClass("active");
+        });
+        $('body').on('click', '.something .editable_text .form_buttons .edit_button.wrong', function () {
+            $(this).parent().parent().parent().removeClass("active")
+        })
+    });
+
+
+</script>

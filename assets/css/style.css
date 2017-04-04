@@ -1,0 +1,2433 @@
+html,body
+{
+    
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: #000;
+    background-color: #f1f2f3;
+   font-family: 'Roboto', sans-serif;
+}
+body *{
+    transition: all 0.8s ease;
+}
+pre{
+    font-family: 'Roboto', sans-serif;
+}
+audio,
+canvas,
+img,
+video
+{
+    vertical-align: middle;
+}
+fieldset
+ {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin:0px;
+    line-height: 1.2;
+}
+ul,ol
+{
+    padding:0px;
+    margin:0px;
+}
+a
+{
+    color: #289AD6;
+    text-decoration: none;
+}
+.clear
+ {
+
+    clear: both;
+}
+
+.no-padding
+{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.no-margin
+{
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+.rw-btm
+{
+    margin-bottom: 0px!important;
+}
+.mt10
+{
+    margin-top: 10px;
+}
+.mbt10
+{
+    margin-bottom: 10px;
+}
+.loadingSub{
+    position: fixed;
+    top:0px;
+    width:100%;
+    display: none;
+}
+.loadingSub .progress{
+    margin:0px !important;
+}
+/* EDITABLE FORM CSS*/
+.editable-wrap select{
+    height: 30px;
+    line-height: 30px;
+    color:#000000;
+}
+.editable-wrap input[type='text']{
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    color: #000;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.editable-wrap button{
+    border:none;
+    border-radius: 5px;
+}
+.editable-wrap .editable_submit{
+    background-color: green;
+}
+.editable-wrap .editable_cancel{
+    background-color: #ffffff;
+    border:1px solid darkgray;
+}
+.editable-wrap .editable_submit i{
+    color:#fff;
+}
+.editable-wrap .editable_cancel i{
+    color:#6b7c8e;
+}
+/*---------------------HEADER CSS STRAT----------------*/
+.show_email_verify{
+    padding:5px 15px;
+    background: #fcf1c7;
+    font-size:12px;
+    line-height: 20px;
+    text-align: center;
+}
+.show_email_verify a{
+    color:blue;
+    cursor: pointer;
+}
+.lnmlogi-img
+{
+        height: 50px;
+    margin-left: 67px;
+}
+nav.lnm-homenav
+{
+    color: black!important;
+    background-color: white!important;  
+}
+nav.lnm-homenav ul a
+{
+  color: gray!important; 
+      padding: 0 30px!important; 
+}
+.side-icon{
+    color: gray !important;
+    font-size: 33px!important;
+    margin-left: 10px!important;
+}
+.lmn-topmnht
+{
+    min-height: 279px;
+}
+.lmn-stpicon
+{
+    font-size: 25px!important;
+    color:lightgrey;
+   /* padding: 10px;*/
+}
+.lnm-btnlft
+{
+    padding:0px !important;
+   /* height:25px;
+    width:25px;*/
+}
+.lnm-btnlft:hover
+{
+   background-color: transparent;
+}
+/*---------------------DOOPDOWN CSS STRAT----------------*/
+
+.dropdown {
+    position: relative;
+    padding:0px 15px;
+    cursor: pointer;
+}
+
+.dropdown ul {
+
+    position: absolute;
+
+    right: 0;
+
+    z-index: 999;
+
+    top:64px;
+
+    -webkit-transition: all 0.9s ease;
+
+    transition: all 0.5s ease;
+
+    -webkit-transform: scale(0);
+
+    transform: scale(0);
+
+    min-width: 200px;
+
+    background-color: #ffffff;
+
+    -webkit-transform-origin: 0 0;
+
+    transform-origin: 0 0;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.dropdown ul li {
+
+    display: block;
+   /* height: 40px!important;*/
+    width: 100%;
+}
+
+
+
+.dropdown ul li a {
+
+    width: 100%;
+
+    padding: 0em 18px;
+
+    display: inline-block;
+
+    white-space: pre;
+
+    color: #9d0000;
+
+    box-sizing: border-box;
+
+}
+
+.dropdown ul li a:hover {
+
+    background: #d3d3d3;
+
+    color: #000000;
+
+}
+
+.dropdown:hover ul {
+
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+
+}
+
+
+
+.dropdown ul li ul
+
+{
+
+    left: 100%;
+
+    top: -65px;
+
+    display: none;
+
+    float: left;
+
+    position: relative;
+
+}
+
+
+
+.dropdown ul .sub-menu:hover ul
+
+{
+
+    display: block;
+
+}
+
+.dropdown ul .sub-menu ul li
+
+{
+
+    display: block;
+
+
+
+}
+
+.dropdown ul li ul li a
+
+{
+
+    width: 100%;
+
+    padding: 0em 18px;
+
+    white-space: pre;
+
+    color: #9d0000;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/*---------------------SLIDER CSS STRAT----------------*/
+.lnm-morebtn
+{
+
+    background-color: white!important; 
+    color: black!important; 
+    font-size: 15px!important; 
+}
+.mttop100
+{
+    margin-top: 100px;
+}
+.lmn-sldicon
+{
+    
+    height:50px !important;
+    width:50px !important;
+    background-repeat: no-repeat;
+}
+.img1
+{
+    background-image: url('../images/slider/incubator.png');
+}
+.img2
+{
+    background-image: url('../images/slider/startups.png');
+}
+.img3
+{
+    background-image: url('../images/slider/mentors.png');
+}
+.img4
+{
+    background-image: url('../images/slider/investors.png');
+}
+.slider .slides {
+    background-color: #414655;
+}
+
+/*---------------------SUMMARY CSS STRAT----------------*/
+.lnm-summary
+{
+    background-color:#F5FAFD;
+    padding: 15px;
+    color:#344A5F;
+    text-align: center
+}
+.lnm-summarycnt
+{
+        width: 85%!important; 
+}
+.lnmcard .lnmcard-content .lmn-card-title {
+    line-height: 45px;
+}
+.lnmcard .lmn-card-title {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+.lnmdel-summhdtext
+{
+    color:#344A5F;
+}
+.lnmcard .lnmcard-content
+ {
+    padding: 6px;
+    border-radius: 2px 2px 2px 2px;
+    color: white;
+}
+.c1
+{
+background-color: #E84C3D !important;
+
+}
+.c2
+{
+background-color: #16A086 !important;
+}
+.c3
+{
+background-color: #F39C11 !important;
+}
+.c4
+{
+background-color: #CC6054 !important;
+}
+.lnmcard-bdr1
+{
+    border:2px solid #E84C3D ;
+}
+.lnmcard-bdr2
+{
+    border:2px solid #16A086;
+}
+.lnmcard-bdr3
+{
+    border:2px solid  #F39C11;
+}
+.lnmcard-bdr4
+{
+    border:2px solid   #CC6054;
+}
+.card-action .crd-act1
+{
+    color:#E84C3D!important;
+}
+
+.card-action .crd-act2
+{
+    color:#E84C3D!important;
+}
+
+.card-action .crd-act3
+{
+    color:#F39C11!important;
+}
+
+.card-action .crd-act4
+{
+    color: #CC6054!important;
+}
+.card-action
+{
+        padding: 15px!important;
+        font-size :24px!important;
+}
+/*---------------------HOWITWORKS CSS STRAT----------------*/
+
+.lnmdel-howithdtext
+{
+    margin-top:20px!important; 
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.lnm-howitwork
+{
+background-image: url('../images/howitworks/howitworks-bg.jpg');
+height:480px;
+padding :15px;
+}
+.img-center
+{
+    text-align: center;
+}
+/*---------------------BENEFITS CSS STRAT----------------*/
+.lnm-benefits
+{
+    background-color: white;
+    padding: 15px;
+}
+.lnmdel-benefitdtext
+{
+    text-align: center;
+}
+.lnmdel-benefits
+{
+     margin-top: 10px!important;
+    margin-bottom: 10px;
+     font-size: 16PX;
+     text-align: center;
+
+}
+.cont-bnft
+{
+    width: 85%!important;    
+}
+.lmn-bnfticon
+{
+    margin-top: 17px;
+    color: #16A086;
+    border: 3px solid #16A086;
+    border-radius: 50%;
+    height: 68px;
+    width: 68px;
+}
+.lmn-lensimg
+{
+ background-image: url('../images/slider/lens.png');
+ 
+}
+.onhover-bnft:hover .lmn-lensimg
+{
+ background-image: url('../images/slider/lens-white.png');
+}
+.lmn-mirrorimg
+{
+ background-image: url('../images/slider/mirror.png');
+}
+.onhover-bnft:hover .lmn-mirrorimg
+{
+ background-image: url('../images/slider/mirror-white.png');
+}
+.lmn-bnnfthding
+{
+    font-size: 20px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.lmn-bnnfthsubhding
+{
+    font-size: 14px;
+    text-align: justify;
+     cursor: pointer;
+}
+.onhover-bnft:hover .lmn-bnfticon
+{
+    background-color: #16A086;
+    color:white;
+    border: 3px solid #16A086;
+    cursor: pointer;
+}
+.onhover-bnft:hover .lmn-bnnfthding
+{
+    color: #16A086;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lmn-mt20
+{
+    margin-top:20px;
+}
+/*---------------------TOP CSS STRAT----------------*/
+.lnm-top
+{
+    background-color: #EBEBEB;
+    padding: 15px;
+}
+.lnmdel-toptext
+{
+    text-align: center;
+}
+.lmn-tabs
+{
+    background-color: transparent !important;
+        font-size: 15px;
+        overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.lmn-tabs .lmn-tab
+{
+        text-transform: capitalize!important;
+}
+.lmn-tabs .lmn-tab a:hover
+{
+    color: black!important;
+}
+.lmn-tabs .lmn-tab a
+{
+    color: black;
+}
+.lmn-tabs .indicator
+{
+    background-color:#18B3EB!important;
+    height: 3px;
+}
+.lmn-topbox
+{
+    background-color:white;
+    padding:15px;
+    border:1px solid lightgray;
+}
+.lmn-boximg
+{
+    text-align:center;
+}
+.lmn-crcleimg
+{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+.lmnright-num {
+    background-color: #16A086;
+    padding: 3px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+}
+.lmn-tophdsb
+{
+    float: left;width: 80%
+}
+.lmn-rtdiv
+{
+    float:left;left:0px;
+}
+.lmn-topjnam
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.lmn-topsubnm
+{
+    font-weight:bold;
+}
+.lmn-topsub
+{
+margin-top:6px;
+margin-bottom:4px;
+font-size: 13px;
+
+}
+.lmn-topcnttext
+{
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+.lmn-topbtn
+{
+    border-bottom: 4px solid #CC6054 !important;
+}
+.lmn-topbtn0
+{
+    border-bottom: 4px solid #F29C13 !important;
+}
+.lmn-topbtn1
+{
+    border-bottom: 4px solid #16A184 !important;
+}
+.lmn-topbtn2
+{
+    border-bottom: 4px solid #E74B3C !important;
+}
+.lmn-mt15
+{
+    margin-top: 15px;
+}
+.lmn-minhtop
+{
+    min-height: 238px;
+}
+/*How are startups rated at different stages?css start*/
+
+.lnm-startuprate
+{
+    background-color: #EBEBEB;
+    padding: 25px;
+}
+.rating-cnt
+{
+    width: 85% !important;
+}
+/*---------------------DELIGHTED CUSTOMERS CSS STRAT---------*/
+.lnm-deligatecstm
+{
+    background-color:white;
+    padding: 25px;
+    text-align: center
+}
+.lnm-deligatecnt
+{
+        width: 85%!important; 
+}
+.lnmdel-subtext
+{
+    margin-top :10px!important;
+    margin-bottom: 10px;
+     font-size: 16PX;
+}
+.lnmdel-hdtext
+{
+     margin-top :10px!important;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.shadow-hover:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.30s ease;
+}
+
+/*---------------------SIGNUP FOR EARLY ACCESS PROGRAM CSS STRAT---------*/
+.lnm-signupstm
+{
+    background-color:#F7F9FD;
+    padding: 25px;
+    text-align: center
+}
+.samp_bg {
+    background-color: white;
+    padding-left: 30px;
+    border:1px solid lightgray;
+}
+.input-type
+{
+    margin-bottom: 0px !important;
+    border-bottom:none !important;
+}
+.input-txtlumn
+{
+  color:#535A64;  
+  font-size: 18px;
+  font-weight: bold;
+}
+.lnmdel-signhdtex
+{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:#535A64;
+}
+.lmn-signsubmt
+{
+        background-color: transparent;
+    color: #535A64;
+    border: 2px solid #535A64;
+}
+/*---------------------GET STARTED FOR FREE CSS STRAT---------*/
+.lnm-getstart
+{
+    background-color:#F39C11;
+    padding: 15px;
+    color:white;
+    text-align: center
+}
+.lnm-getstartbtn
+{
+     background-color:transparent!important;
+         border: 2px solid white;
+}
+.box-shadow.lnm-getstartbtn 
+{
+    box-shadow:none!important;
+}
+.mbt-0
+{ 
+    margin-bottom: 0px !important;
+}
+.lmn-breadcrum
+{
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+.lmn-startupdlt
+{
+    margin-top: 32px;
+    color: #2A58AD;
+    background-color: white;
+    border-radius: 50%;
+    height: 45px;
+    padding: 0px;
+    width: 45px;
+    display:none;
+}
+.lmn-startupdlt:hover
+{
+    margin-top: 32px;
+    background-color: white;
+    color: #2A58AD;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 0px;
+    display:none;
+}
+.lnm-productsdlt:hover .lmn-startupdlt
+{
+    display: block;
+}
+/*---------------------TIMELINE PAGE CSS STRAT----------------*/
+.lmn-tmline-outbox
+{
+    position: relative;
+    width: 33%;
+    height: 6px;
+    float: left;
+    background-color: #d7d7d7;   
+}
+/* .lmn-tmline
+{
+    position: relative;
+    height: 6px;
+    background-color: #51af9d;
+ /*   width:100%;
+}*/
+ .lmn-tmlinecir
+
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    background: #3596db;
+    border-radius: 50%;
+    left: -5px;
+    z-index: 2;
+    
+}
+.lmn-tmlinecir:hover+.lmn-onhvrtmn
+{
+display: block;
+}
+
+ .lmn-tmlinecir.last
+{
+    left: auto;
+    right:-12px;
+}
+
+.lmn-thumpointer
+{
+    position: absolute;
+    left: 49%;
+    border: none;
+    height: 18px !important;
+    width: 18px!important;
+    border-radius: 50% 50% 50% 0;
+    background-color: #cc6254;
+    top: -30px;
+    margin-left: -6px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+}
+.lmn-tmlmtextbox
+{
+    background-color: #cc6054;
+    padding: 2px 6px;
+    color: white;
+    margin-left: -18px;
+    margin-top: -3px;
+    float: left;
+}
+
+.arrow-uptmlmtextbox 
+{
+    width: 6px;
+    height: 5px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid #cc6054;
+    margin-left: -5px;
+    margin-top: 6px;
+}
+.lmn-timelinetxt
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 9px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.lmn-timelineholder .lmn-tmlmtextbox .lmn-timelinetxt
+{
+font-size: 15px;
+}
+
+.lmn-sld .lmn-onhvrtmn
+{
+    display: none;
+}
+
+.lmn-tmlinecir.last+.lmn-onhvrtmn .arrow-uptmlmtextbox
+{
+        margin-right: 0px;
+    margin-left: auto;
+}
+
+.lmn-tmlinecir.last+.lmn-onhvrtmn .lmn-tmlmtextbox
+{
+   float: right;
+}
+.lmn-timelineholder .lmn000 .lmn-onhvrtmn
+{
+margin-top: -21px;
+}
+
+
+.timeline_status li
+{
+    position:relative;
+    
+}
+
+.timeline_status .marker
+{
+        width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 50%;
+    float: left
+}
+
+.marker::before{
+       position: absolute;
+    height: 5px;
+    content: " ";
+    background: red;
+    width: 71%;
+   /* top: 5px;*/
+    left: 15px;
+
+}
+.lmn-wtstgstp
+ {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+.lmn-timelinfill
+{
+    position: absolute !important;
+    height: 6px;
+    width: 0%;
+    background: #16A086;
+    z-index: 1;
+}
+/*---------------------STARTSUP PAGE CSS STRAT----------------*/
+.lnm-startups
+{
+    padding: 15px;
+    background-color: #ebebeb;
+
+}
+.lmn-stpimgmt
+{
+    max-height: 184px;
+}
+
+.lmn-box
+{
+   /* min-height: 400px;*/
+    background-color: white;
+    padding: 10px;
+    border:1px solid lightgray;
+    margin-top:10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.cnt
+{
+    width: 80%!important;
+}
+.lnm-onimgtext
+{
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: url(../images/black_text_bg.png) repeat-x bottom;
+    width: 100%;
+}
+.lmn-startupicns
+{
+    text-shadow: 1px 1px black;
+    color: white;
+    font-weight: bold;
+     margin-left: 21px;
+    margin-right: 21px;
+    font-size: 14px;
+}
+.lmn-startnm
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+.lmn-tagline
+{
+    font-size: 14px;
+}
+.lmn-strtcnt
+{
+    text-align: justify;
+    font-size: 13px;
+}
+
+.mrt-icon
+{
+    margin-right: 4px;
+}
+.startupcard .startupcard-content
+{
+    padding: 12px !important;
+    color: black !important;
+}
+.lmn-slidebubble
+{
+    border-bottom: 1px solid lightgray;
+    /*padding-bottom: 10px;*/
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.startupcard .startupcard-content .c100 span{
+    font-size:18px;
+    line-height: 50px;
+    width:50px;
+
+}
+
+.lmn-sld
+{
+    padding: 10px;
+}
+.lmn-tmartifact
+{
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    cursor: pointer;
+}
+/*---------------------PROJECTDETAILS CSS STRAT----------------*/
+
+.lnm-productsdlt
+{
+    background-color: #2A58AD;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.lmn-crleimg
+{
+    border-radius: 50%;
+    height:75px;
+    width:75px;
+    margin-top:10px;
+    cursor: pointer;
+}
+.container-breadcrums
+{
+    width:85%;
+}
+.lmn-ctnimg
+{
+    text-align: center;
+}
+.lmn-pdideatlt
+{
+    font-size: 18px;
+}
+.lmn-pdideatlt 
+{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3cf3f;
+}
+.lmn-pddeattagline
+{
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 12px;
+}
+.lmn-pddeattaglinecnt
+{
+        margin-top:5px;
+        color: white;
+        font-size: 14px;
+        text-align: justify;
+}
+.lmn-wdthadj
+{
+    margin-left: 3.333333% !important;
+}
+.lmn-navtabs
+{
+  border-bottom: 5px solid #2A58AD;  
+     color: white;
+    width:80%;
+    /* border-bottom: 0px; */
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #2A58AD;
+   padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.lmn-op
+{
+    margin-top: -20px;
+}
+.lmn-navtabs:hover  {
+    color: white;
+    border-bottom: 5px solid #18B3EB;
+    width:80%;
+    /* border-bottom: 0px; */
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #1D4C9E;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.lmn-navtabs.active  {
+    color: white;
+    border-bottom: 5px solid #18B3EB;
+    width:80%;
+    /* border-bottom: 0px; */
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #1D4C9E;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.lmn-mnht
+{
+    min-height: 348px;
+}
+.lmn-errormsg
+{
+    margin-top: 100px;
+}
+.lmn-artfact
+{
+    min-height: 158px;
+}
+.mt10-lmn
+{
+    margin-top:10px
+}
+.lmn-pdpd-cnrt
+{
+    font-size: 14px;
+    text-align: justify;
+}
+.lmnpsd-p
+{
+    margin-top:0px;
+}
+.lmn-arifactmh
+{
+    min-height: 240px;
+}
+.lmn-pdviedo
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:4px;
+     margin-bottom:4px;
+}
+.lmn-arfectcnt
+{
+    font-size: 15px;
+    text-align: justify;
+}
+.lmn-arfictbg0
+{
+    background-color: #CC6054;
+}
+.lmn-arfictbg1
+{
+    background-color:#F39C11;
+}
+.lmn-arfictbg2
+{
+    background-color: #16A086;
+}
+.lmn-arf-text p
+{
+    color:#fff !important;
+}
+.lmn-teamminht
+{
+    min-height: 195px;
+}
+.lmn-teamimg
+{
+    height:70px;
+    width:70px;
+}
+.lmn-teamnm
+{
+   /* margin-left: 8px;*/
+    margin-bottom: 3px;
+    margin-top:3px;
+    font-size: 12px;
+}
+.lmn-teamnm.name
+{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.lmn-minheight
+{
+    min-height: 195px;
+}
+.lmn-teamnm.details
+{
+    text-align: justify;
+}
+.lmn-breadcrumspanln
+{
+    line-height: 3.5em !important;
+    font-size: 0.3em !important;
+    width: 100%!important;
+}
+.lmn-mbtart
+{
+    margin-bottom: 10px !important;
+}
+/*---------------------LEADER CSS STRAT----------------*/
+.lmn-leaderimg
+{
+    width:75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.leader-cir {
+        font-size: 75px !important;
+        margin-left: 35px;
+       margin-left: calc((100% - 75px)/2);
+}
+.lmn-devlopname
+{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.lmn-dvpdesignation
+{
+    font-size: 16px;
+     margin-top: 3px;
+    margin-bottom: 3px;
+}
+.mt20-lmn {
+    margin-top: 12px;
+}
+.lmn-ldrtingname
+{
+        text-align: center;
+    /* margin-left: 10px;
+    margin-right: 52px; */
+    clear: both;
+    font-size: 14px;
+}
+/*---------------------RATING CSS STRAT----------------*/
+
+.lmnrat-arfictbg1
+{
+    background-color: #CC6054;
+    height: 250px !important;
+    color:white;
+}
+.lmn-get
+{
+    margin-top:70px;
+}
+.lmn-stars
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*---------------------TRANSACTIONBOARD CSS STRAT------------*/
+.lumn-transcntcle
+{
+  /*  margin-right: auto;
+    margin-left: auto;*/
+    text-align: center;
+}
+.lmn-trans
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.lmn-transc1
+{
+   background-color: #CC6054; 
+}
+.lmn-transc2
+{
+   background-color:#F39C11 ; 
+}
+.lmn-transc3
+{
+   background-color:#16A086 ; 
+}
+.lmn-transc1text
+{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bold;
+
+}
+.lmn-signupcnv
+{
+    margin-left: 25%;
+    font-size: 95px !important;
+    margin-top:10px;
+}
+.lmn-mt50
+{
+        margin-bottom: 50px;
+}
+.lmn-mt-38
+{
+        margin-top: -38px;
+        background-color: transparent;
+}
+.lmn-mt-38 .lnm-transtab a
+{
+     color: white;
+}
+.lmn-mt-38 .lnm-transtab 
+{
+    padding: 5px 5px 0px 5px!important;
+}
+.lmn-mt-38 .lnm-transtab  a:hover
+{
+        color: white;
+}
+.lmn-mt-38 .lnm-transtab  a.active:hover
+{
+        color:#18B3EB;
+}
+ li.lnm-transtab a
+{
+  background-color: #18B3EB;
+  color: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        border-radius: 5px 5px 0px 0px;
+
+}
+ li.lnm-transtab a.active
+ {
+    color:#18B3EB;
+    background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+ }
+ .lmn-mt-38 .indicator
+ {
+    display: none;
+
+ }
+.lmn-10fx
+{
+    margin-top:0px;
+}
+.lmn-trnspsi
+{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    /*font-weight: 600;*/
+}
+.lmn-trsnspiscnt
+{
+     font-size: 12px;
+    text-align: justify;
+    margin-top: 6px;
+}
+.lmn-trnspsicir {
+    font-size: 62px !important;
+}
+.lmx-hvbox
+{
+    min-height: 183px;
+}
+.lmx-hvbox:hover
+{
+cursor: pointer !important;    
+}
+.lmx-hvbox:hover .lmn-trnspsi
+{
+    color:#18B3EB;
+    
+}
+
+.referal-cir
+ {
+    font-size: 100px !important;
+   margin-left: 100px;
+}
+.ptagtxt
+{
+    clear: both;
+    text-align: center;
+}
+.revnue-cir
+{
+font-size: 100px !important;
+margin-left: 20px;
+}
+/*.trans-act-cal
+{
+    margin-top: -10px;
+    margin-bottom: 3px;
+    height: 34px;
+    width: 34px;
+    background-color: #18B3EB;
+    margin-bottom: 3px;
+    text-align: center;
+    border-radius: 6px 6px 6px 6px;
+    line-height: 29px;
+    color: white !important;
+    cursor: pointer;
+}*/
+.trans-act-cal {
+    margin-top: -4px;
+    margin-bottom: 3px;
+    /* height: 34px; */
+    /* width: 34px; */
+    /* background-color: #18B3EB; */
+    margin-bottom: 3px;
+    text-align: center;
+    border-radius: 6px 6px 6px 6px;
+    line-height: 29px;
+    color: #18B3EB;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: -40px;
+}
+.trans-act-cal-icon
+{
+   
+    text-align: center;
+    font-size: 14px;
+}
+.ui-datepicker-title select
+{
+  display: inline-block !important; 
+  height: 30px;
+}
+.ui-datepicker .ui-datepicker-title select
+ {
+    font-size: 13px !important;
+    margin: 2px 0!important;
+}
+.lmn-timelinenumb
+{
+
+    position: absolute;
+    top: -30px;
+   /* left:-1px;*/
+
+}
+.lmn-lastnumb
+{
+    right: 0px !important;
+}
+.lmn-sld .lmn-timelinenumb{
+    font-size: 12px;
+    color: black;
+}
+/*---------------------MENTORS CSS STRAT----------------*/
+.lmn-mentors
+{
+    padding: 15px;
+    background-color: #ebebeb;
+}
+.lmn-mentorsbox
+{
+    border: 1px solid lightgray;
+    background-color: #ebebeb;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+.lmn-mentorsimg
+{
+    height: 70px;
+    width: 70px;
+}
+.lmn-mntstname
+{
+     margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color:black;
+}
+
+.lmn-mntstagline
+{
+     margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color:black;
+
+}
+.lmn-mentormin
+{
+    min-height: 140px;
+}
+.lmn-tnt
+{
+    font-weight: bold;
+}
+.lmn-strtnamesec
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lmn-tophdall
+{
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.lmn-mtc10
+{
+    margin-top: 10px;
+}
+ .shadow-hover1:hover {
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important;
+    cursor: pointer;
+    transition: all 0.30s ease;
+}
+.mentors-cir
+{
+    font-size: 50px !important;
+}
+/*---------------------MENTORS DETAILS CSS STRAT----------------*/
+.lmn-mentorsdetailsimg
+{
+        height: 130px;
+        width:130px;
+        border-radius: 50%;
+}
+.lmn-mentordetails
+{
+    font-size: 90px;
+    margin-top: 30px;
+    /* margin-right: 25px; */
+    right: 40px;
+}
+.lmn-mntordtls
+{
+    margin: 20px;
+}
+.lmn-mntdtlname
+{
+    margin-bottom: 2px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.almn-addmntdtl
+{
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+.lmn-mntdlsrating
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+        font-size: 16px;
+}
+.lmn-mrginmntdt
+{
+        margin-top: 10px;
+
+}
+.lmn-mentosdtlprofil
+{
+    text-align: justify;
+    border-bottom: 1px solid black;
+    padding: 9px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+/*.lmn-mentosdtlprofil:last-child 
+{
+    border: none;
+}*/
+.lmn-mt27
+{
+    margin-top:27px;
+}
+.lmn-mt75
+{
+    margin-top:75px
+}
+/*---------------------ADVICEBOARD CSS STRAT----------------*/
+.lmn-advhdtxt
+{
+    font-size: 21px;
+}
+
+.lmn-advsubtxt
+{
+    margin-top: 4px;
+    font-size: 14px;
+}
+.lmn-advcollapsible-body 
+{
+    padding: 15px !important;
+}
+.lmn-adviceimg
+{
+        width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.lmn-advcmmentbd
+{
+
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.arrow-up {
+    width: 12px;
+    height: 12px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 15px solid #EBEBEB;
+    margin-left: 19px;
+}
+.lmn-namegoescmt
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.lmn-nwsud
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.query-box {
+    position: relative;
+    display: block;
+    min-height: 3rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.lmn-cmtboxlk{
+        font-size: 12px;
+    color: #737373;
+    padding: 10px;
+    cursor: pointer;
+}
+.lmn-clphading
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.lmn-comment 
+{
+    background-color:#18B3EB;
+    color: white; 
+}
+.lmn-txtbg
+{
+     background-color: #ebebeb;
+    border: 1px solid lightgray;
+    
+}
+textarea.materialize-textarea
+{
+        padding: 0.6rem 0;
+}
+.adviceboard-btn
+{
+    line-height: 6px !important;
+    padding: 15px!important;
+}
+
+/*----------------------lnm-startupfm------------*/
+.lnm-startupfm
+{
+    background-color:#ebebeb;
+    padding: 15px;
+}
+.lmnstfm-hd
+{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/*-------------------logindropdown-------------*/
+.ln-mt100
+{
+    margin-top: 150px;
+}/*
+.dropdown {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}*/
+.dropdown dd,
+.dropdown dt {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown ul {
+    margin: -1px 0 0 0;
+}
+
+.dropdown dd {
+    position: relative;
+}
+
+.dropdown a,
+.dropdown a:visited {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.dropdown dt a {
+    background-color: #4F6877;
+    display: block;
+    padding: 8px 20px 5px 10px;
+    min-height: 25px;
+    line-height: 24px;
+    overflow: hidden;
+    border: 0;
+    width: 272px;
+}
+
+.dropdown dt a span,
+.multiSel span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 3px 2px 0;
+}
+
+.dropdown dd ul {
+    background-color: #4F6877;
+    border: 0;
+    color: #fff;
+    display: none;
+    left: 0px;
+    padding: 2px 15px 2px 5px;
+    position: absolute;
+    top: 2px;
+    width: 280px;
+    list-style: none;
+    height: 100px;
+    overflow: auto;
+}
+
+.dropdown span.value {
+    display: none;
+}
+
+.dropdown dd ul li a {
+    padding: 5px;
+    display: block;
+}
+
+.dropdown dd ul li a:hover {
+    background-color: #fff;
+}
+
+/*---------------------FOOTER CSS STRAT----------------*/
+.lnm-footer
+{
+
+    background-color: #34495E;
+    padding: 15px;
+    color:white;
+
+}
+.lnmfooterlog-img
+{
+        height: 32px;
+    
+}
+.lnm-footerlink 
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+
+}
+.lnm-mt10
+{
+        margin-top: 17px;
+         margin-bottom: 0px;
+             font-size: 14px;
+}
+.lnm-mt10 a
+{
+    color: white;
+}
+
+/*--------------------------Edit button--------------------------*/
+.something
+{
+position: relative;
+width:200px;
+height: 30px;
+line-height: 30px;
+background: red;
+}
+.something:after
+{
+position: absolute;
+width:20px;
+height: inherit;
+background: yellow;
+content: "\f040";
+display: none;
+top:0px;
+right:0px;
+}
+.something:hover::after
+{
+display: block;
+}
+.something .editable_text
+{
+position: absolute;
+top:0px;
+left:0px;
+width: inherit;
+height: inherit;
+line-height: inherit;
+display: none;
+border:1px solid black;
+}
+.something.active .editable_text
+{
+display: block;
+}
+.something.active::after,.something.active:hover::after
+{
+display: block;
+}
+.something .editable_text input,.something .editable_text .input_text
+{
+height: inherit;
+width: inherit;
+}
+.something .editable_text .form_buttons .edit_button
+{
+position: relative;
+float: right;
+margin:0px 4px;
+}
+/*-----------------------error css-----------------*/
+.star-required {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* color: #737373; */
+}
+/*.......................Profile form .......................*/
+.lmnprofile-edit
+{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: white;
+    line-height: 28px;
+    margin: 10px;
+    cursor: pointer;
+}
+.emailhd
+{
+    display:none;
+}
+.close_toast
+{
+    float: left;
+    margin-left: 20px;
+    color: red;
+    font-size: 18px;
+}
+.tsticon
+{
+    margin-top:17px !important;
+}
+.error
+{
+    color:red;
+}
+.startupword-wrap
+{
+    width: 100%;
+    word-wrap: break-word;
+
+}
+
+.profil-icon
+{
+    font-size: 20px !important;
+    margin-top: 8px!important;
+    color: #47A1DD;
+    height: 40px;
+    width: 40px;
+}
+.lmn-modal
+{
+    max-height: 87%;
+}
+.onhover-del .team-close
+{
+    position: absolute;
+    float: right;
+    margin-right: 15px;
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+    right:0px;
+
+}
+.onhover-del .team-edit
+{
+    position: absolute;
+    float: right;
+    margin-right: 15px;
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+    right: 30px;
+}
+.onhover-del:hover .team-close
+{
+    display: block;
+    cursor:pointer;
+}
+.onhover-del:hover .team-edit
+{
+    display: block;
+    cursor:pointer;
+}
+.teamabout-cnt
+{
+    width: 100%;
+    word-wrap: break-word;
+
+}
+.icon-del{
+    color: white !important;
+}
+.onhover-del .artifact-edit
+{
+    position: absolute;
+    float: right;
+    margin-right: 10px;
+    background-color:#8a8a8a;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+    right: 0px;
+    top: 9px;
+}
+/*.onhover-del .artifact-close {
+    position: absolute;
+    float: right;
+    margin-right: 10px;
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+    right: 0px;
+    top: 9px;
+}*/
+.onhover-del:hover .artifact-edit
+{
+    display: block;
+    cursor:pointer;
+}
+.onhover-del:hover .artifact-close
+{
+    display: block;
+    cursor:pointer;
+}
+.lmn-modleedit
+{
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    float: right;
+    top: 0px;
+    cursor: pointer;
+}
+.lnn-startupmnht
+{
+    min-height: 335px !important;
+}
+.lmn-nodata
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+.lmn-swtchlab
+{
+   color: white !important;
+}
+.lmn-qeyed{
+    position: absolute !important;
+    /*bottom: 38px!important;*/
+    float: left;
+
+}
+.user_display{
+    min-height: 40px;
+}
+.user_display .profile_pic{
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px
+}
+.user_display .profile_pic img{
+    border-radius: 50%;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    /*border:3px solid #ffdf5e;*/
+}
+.user_display .profile_pic.startup img {
+    border: 2px solid #E84C3D;
+}
+.user_display .profile_pic.mentor img {
+    border: 2px solid #16A086;
+}
+.user_display .profile_pic.incubator img {
+    border: 2px solid #CC6054;
+}
+.user_display .profile_pic.guest img {
+    border: 2px solid #F39C11;
+}
+
+
+.user_display .user_detail{
+    margin-left:5px;
+    position: relative;
+    float:left;
+}
+.user_display .user_detail .user_name{
+    font-size:14px;
+    color:darkgray;
+    font-weight:bold;
+}
+.user_display .user_detail .date_time{
+    font-size:12px;
+    color:darkgray;
+}
+.comment_holder .user_display .profile_pic{
+    width:30px;
+    height:30px;
+    margin-top:2px;
+}
+.comment_holder .user_display .user_detail .user_name{
+    font-size:12px;
+}
+.lmn-advcmmentbd .comment_holder .comment_holder{
+    margin-left: 20px;
+}
+.query_stats_holder .stats{
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    font-size:14px;
+    cursor: pointer;
+    color: gray;
+}
+@keyframes animateic {
+    60% {
+       transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.query_stats_holder .stats .fa.active{
+    color:#00aeef;
+    animation-name:animateic;
+    animation-duration: 0.6s;
+}
+.comment_form{
+    margin-bottom:0px;
+}
+.comment_form .input-field{
+    margin-top:0px;
+}
+.comment_form .comment_box{
+    width:100%;
+
+}
+.comment_form textarea{
+    background-color: #fff;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 1px solid lightgray;
+    height: 53px !important;
+    overflow: auto;
+}
+/*--------------query delete css---------------------------*/
+.lmn-editdelet
+{
+   /* position: absolute;
+    right: 0px;
+    top: 14px;*/
+    position: absolute;
+    right: -35px;
+    top: 0px;
+}
+p.lmn-querypn
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    clear: both;
+    font-weight: normal;
+    font-size: 15px;
+}
+.switch
+{
+    width: 35px !important;
+    height: 14px!important;
+}
+.switch small
+{
+    /*width: 15px!important;
+    height: 15px!important;*/
+    width: 22px!important;
+    height: 22px!important;
+    margin-top: -4px;
+}
+
+.onhover-del:hover .query
+{
+    display: block;
+    cursor:pointer;
+}
+
+.onhover-del .query {
+    float: right;
+    margin-right: 15px;
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+
+}
+.onhover-del:hover .queryedit
+{
+    display: block;
+    cursor:pointer;
+}
+.onhover-del .queryedit
+{
+    float: right;
+    margin-right: 15px;
+    background-color: #8a8a8a;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    display: none;
+    /*margin-right: 45px !important;
+    margin-top: -23px !important;*/
+
+}
+.comment_holder{
+    margin-bottom: 0px;
+    padding:0px 5px;
+}
+.comment_holder .comment_profile_text{
+    padding: 5px;
+}
+.comment_holder .comment_profile_text:hover{
+    background-color: #F1F2F3;
+}
+.comment_holder .comment_profil_pic{
+    position: relative;
+    float:left;
+}
+.comment_holder .comment_display{
+    position: relative;
+    float: left;
+    margin:0px 8px;
+}
+.comment_holder .comment_text{
+    border-bottom: 1px solid black;
+}
+@keyframes showComment {
+    from{transform: scaleY(0)}
+    to{transform: scaleY(1)}
+
+}
+.comment_holder .reply_holder.show_comment{
+animation: showComment 0.3s;
+    transform-origin: top left;
+}
+.lmn-querycmt
+{
+    margin-top: 17px;
+}
+.lmn-pl0
+{
+    padding-left: 0px !important;
+}
+.lmn-bdn
+{
+    border: none;
+}
+.lmn-comment
+{
+    width: 25px;
+    height: 25px;
+    background-color: #8a8a8a;
+    color: white;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: none;
+}
+.lmn-advcmmentbd:hover .lmn-comment
+{
+    display:block;
+}
+/*-------------------------edit css---------------------------*/
+.editable-click, a.editable-click {
+     border-bottom: none !important;
+}
+.lnm-productsdlt .lmn-pdideatlt .editable-click,.lnm-productsdlt a.editable-click {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3cf3f!important;
+}
+.lmn-pdideatlt .editable-click:hover, a.editable-click:hover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3cf3f !important;
+}
+.lmn-pddeattaglinecnt .editable-click,.lnm-productsdlt a.editable-click {
+    margin-top: 5px!important;
+    color: white!important;
+    text-align: justify;
+}
+.lmn-pddeattaglinecnt .editable-click:hover,.lnm-productsdlt a.editable-click:hover {
+    margin-top: 5px;
+    color: white;
+    text-align: justify;
+}
+
+.lmn-pddeattaglinecnt .editable-click:hover,.lnm-productsdlt a.editable-click:hover {
+    margin-top: 5px;
+    color: white;
+    text-align: justify;
+}
+.lmn-pddeattaglinecnt .editable-click:hover,.lnm-productsdlt a.editable-click:hover {
+    margin-top: 5px!important;
+    color: white !important;
+    text-align: justify!important;
+}
+
+.lmn-catitem
+{
+    width: 100%;
+    height: 6px;
+    padding: 6px;
+    line-height: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lmn-profileimg
+{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+
+}
+/***************Postquery******************/
+.lmn-postquey
+{
+    padding:0 18px!important;
+}
+.lmn-pc
+{
+ font-size: 14px;
+}
+.user_display .user_detail .user_name {
+    font-size: 19px !important;
+    color: black!important;
+    font-weight: 500!important;
+}
+.lmn-querycl
+{
+    color: red;
+    /* font-size: 14px; */
+    margin-left: 5px;
+}
+.lmn-quryquestion
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+}
+.lmn-starticommnt
+{
+    color:#E84C3D!important;
+    font-weight: 600;
+}
+.lmn-startlins
+{
+    color:#16A086!important;
+    font-weight: 600;
+}
+.lmn-startkudos
+{
+    color:#CC6054!important;
+    font-weight: 600;
+}
+.lmn-startreply
+{
+    color:#18B3EB!important;
+    font-weight: 600;
+}
+.lmn-startinsight
+{
+    color:#F39C11!important;
+    font-weight: 600;
+}
+.lmn-mtmbqry
+{
+    margin-top: 1px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.lmnqtml
+{
+    margin-left: 45px;
+}
+.lmn-commntusr{
+    font-size: 17px !important;
+    font-weight: 500!important;
+}
+.lmn-commnntsend
+{
+    height: 55px;
+    line-height: 36px;
+    background-color: #2BBBAD;
+    color: white;
+    overflow: auto;
+}
+.btn-flat:hover
+{
+    background-color: #2BBBAD;
+    color: white;
+}
+.lmn-qplft
+{
+    padding-left: 0px !important;
+}
+.lmn-qprft
+{
+    padding-right: 0px !important;
+}
+.lmn-startpitchedt
+{
+    position: relative;
+}
+.lmn-categorycur
+{
+    padding: 5px;
+    cursor: pointer;
+}
+.close-modal
+{
+    float: right;
+    /* height: 25px; */
+    /* width: 25px; */
+    text-align: center;
+    color: red;
+    border-radius: 50%;
+    margin-top: 1px;
+    font-size: 24px !important;
+    cursor: pointer;
+    margin-top: -21px;
+    margin-right: -10px;
+}

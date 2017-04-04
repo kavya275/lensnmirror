@@ -1,0 +1,70 @@
+<nav class="lnm-homenav">
+    <div class="nav-wrapper">
+      <a ui-sref="#" class="brand-logo"><img src="assets/images/logo.png" class="lnmlogi-img"></a>
+      <a ui-sref="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars side-icon" aria-hidden="true"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a ui-sref="startsups">Startups </a></li>
+        <li><a ui-sref="mentors">Mentors</a></li>
+        <li><a ui-sref="leaderboard">Leaderboard</a></li>
+         <!-- <li><a ui-sref="help">Help</a></li>
+        <li><a ui-sref="contact">Contact</a></li>-->
+        <li><a ui-sref="loginsignup"  ng-show="loginStatus!=true">Login/Signup</a></li>
+        <li class="dropdown" ng-show="loginStatus==true">Welcome {{username}}
+            <ul><!--{{role=='mentor'}}--><!--===>{{role}}******-->
+                <li ng-if="role=='startup' || role=='mentor' || role=='incubator'  "><a ui-sref="startuppitchform">Create startup Pitch </a> </li>
+                <li ng-if="role=='startup' || role=='mentor' || role=='incubator'  "><a ui-sref="mypitches">My Own Pitch </a> </li>
+                <li><a ui-sref="profileform">Profile Setting</a> </li>
+                <!--<li><a href="{{href}}changepassword">Change Password</a> </li>-->
+                <li><a ng-click="logout()">Logout</a> </li>
+            </ul>
+            <!--<div class="dropdown"class="fn-text"> myaccount
+                <ul class="left hide-on-med-and-down nav">
+                    <li><a href=""> order1</a> </li>
+                    <li><a href="">order1</a> </li>
+                    <li><a href="">order1</a> </li>
+                    <li><a href=""></a> </li>
+                    <li><a href="">Change Password</a> </li>
+                    <li><a ng-click="logout()">Logout</a> </li>
+                </ul>
+            </div>-->
+        </li>
+         <!--  <li class="dropdown"><i class="fa fa-bell" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="">Notification 1 </a> </li>
+                    <li><a href="">Notification 1</a> </li>
+                    <li><a href="">Notification 1</a> </li>
+                    <li><a href="">Notification 1</a> </li>
+                </ul>
+            </li>-->
+         <!-- <li class="dropdown"><a href=""><i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+           <ul>
+                <li><a href="">Usersubmenu 1 </a> </li>
+                <li><a href="">Usersubmenu 2</a> </li>
+                <li><a href="">Usersubmenu 3</a> </li>
+                <li><a href="">Usersubmenu 4</a> </li>
+            </ul>
+          </li>-->
+      </ul>
+        <!--......................MOBILE VIEW...........................-->
+     <!-- <ul class="side-nav" id="mobile-demo">
+        <li ><a href="#"><img src="assets/images/logo.png" style="height: 50px;"></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a ui-sref="startsups">Startups</a></li>
+        <li><a ui-sref="mentors">Mentors</a></li>
+        <li><a ui-sref="leaderboard">Leaderboard</a></li>
+        <li><a ui-sref="help">Help</a></li>
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a ui-sref="loginsignup" ng-if="userId==0">Login</a></li>
+        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
+      </ul>-->
+
+    </div>
+  </nav><!--{{emailVerify}}==>-->
+<div class="show_email_verify" ng-if="emailVerify=='no'">Your email is not verified, verify your email.
+    <a ng-click="resendVerification()">Click here to resend verification mail</a> </div>
+<script>
+  $(".button-collapse").sideNav();
+</script>

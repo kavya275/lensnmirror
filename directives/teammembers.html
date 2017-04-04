@@ -1,0 +1,63 @@
+<div class="col s12 m12 l12 " id="lmn-team " >
+    <div class="owl-carousel" data-options="{items:4,pagination: true,navigation: false}" id="owl-team">
+    <div owl-carousel ng-repeat="team in data track by $index">
+        <div class="item"> <!--aaaaaaaaaaaa{{team}}-->
+        <div class=" lmn-box onhover-del lmn-teamminht">
+            <div class="row">
+                <div class="team-close" ng-if="permission=='yes'" confirmed-click="deleteEvent(team._id,$index)"  ng-confirm-click="You want to delete Team Member?">
+                    <div><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                </div>
+               <!--<div class="team-edit" ng-if="permission=='yes'">
+                    <a  modal open="modalTeamtedit" href="#modalTeamtedit"></a>
+                    <div>
+                        <i class="fa fa-pencil" aria-hidden="true" ng-click="modalTeamFun(team)"></i>
+                    </div>
+                </div> -->
+                <div class="col s12 l4 m4">
+                    <img on-error="assets/images/defaulterror/default-image.jpg" src="{{imageUrl}}{{team.profile_pic}}" class="lmn-teamimg">
+                </div>
+                <div class="col s12 m8 l8">
+                    <p class="lmn-teamnm name">{{team.name}}</p>
+                    <p class="lmn-teamnm">{{team.designation}}</p>
+                </div>
+                <div class="col s12 l12 m12">
+                   <!-- <p class="lmn-teamnm">Profile</p>-->
+                    <p class="lmn-teamnm details teamabout-cnt"> {{team.about_user}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<!-- Modal Team Form Structure -->
+<!-- <div id="modalTeamtedit" class="modal lmn-modal">
+    <div class="modal-content">
+        <div class="lmnstfm-hd">Edit Team</div>
+        <form class="teamForm" novalidate ng-submit="editteamForm(user)" >
+            <div class="row">
+                <div class="input-field col s12 l6 m6">
+                    <input id="name" type="text" class="validate" ng-model="user.tmname" >
+                    <label for="name">Name</label>
+                </div>
+                <input type="hidden" ng-model="user.memberId">
+                <div class="input-field col s12 l6 m6">
+                    <input id="designation" type="text" class="validate" ng-model="user.tmdesignation">
+                    <label for="designation">Designation</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" length="120" required ng-model="user.tmdescription"></textarea>
+                    <label for="textarea1">About Team member</label>
+                </div>
+                <div class="brws-btn">
+                    <span>Browse</span>
+                    <input type="file" ng-model="user.checkscreen" base-sixty-four-input multiple="false" required>
+                </div>
+                <div class="s12 right">
+                    <button  type="submit"  class="waves-effect waves-light btn lmn-mbtart modal-close">Edit Team</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> -->

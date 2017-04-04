@@ -1,0 +1,18 @@
+
+
+    {
+  "idea": "Glukocare",
+  "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/glukocare.jpg",
+  "rating":"70",
+  "tag_line": "Diabetes Care, Personalized",
+  "storyboard": [
+    {
+      "problem_description": "Diabetes requires a disciplined lifestyle, which means taking medication on-time, eating healthy food and exercising regularly. There can be no common treatment plan because every patient’s body and lifestyle is different. So how can you get personalized care that is best for you? How can your doctors work more effectively with you?",
+      "target_customers": "Patients : Our target customers are IT professionals in Bangalore in the age group of 30 - 50yrs who are diabetic or managing diabetes for someone in their family.Diabetic Clinics: Small and Medium size Diabetic clinics in Bangalore",
+      "solution_summary": "Introducing Glukocare: a unified diabetes management platform. Glukocare bridges the gap between patients with diabetes and their doctors, making diabetes care more personalized and effective.",
+      "value_proposition": "Log activities (Glucose, Medication, Food and Exercise) Reminders for activities Anytime anywhere access to health record Share health records with doctors Diabetic Clinics: Open platform for clinics Proactive management of patients health remotely Close monitoring of high-risk patients Timely intervention for better patient care Communicate with patients regularly",
+      "unfair": "unfail check",
+      "monetization": "monetization"
+    }
+  ]
+}

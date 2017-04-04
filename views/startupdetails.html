@@ -1,0 +1,473 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+<!--BREADCRUMS DIRECTIVE-->
+<startupdetailheader data="startupdetail"></startupdetailheader>
+<section>
+	<div class="container lmn-box cnt">
+		<div class="row">
+			 <div class="col s12 m12">
+		          <div class=" startupcard">
+		          		<div class="row"><!--{{startupdetail}}==>-->
+						    <div class="col s12">
+						      <ul class="tabs lmn-tabs">
+						        <li class="tab lmn-tab col s3"><a class="active" href="#test1">Problem Description</a></li>
+						        <li class="tab lmn-tab col s3"><a  href="#test2">Target Customers</a></li>
+						         <li class="tab lmn-tab col s3"><a  href="#test3">Solution Summary</a></li>
+						         <li class="tab lmn-tab col s3"><a  href="#test4">Value Proposition</a></li>
+						         <li class="tab lmn-tab col s3"><a  href="#test5">Unfair Advantage</a></li>
+						          <li class="tab lmn-tab col s3"><a  href="#test6">Monteization Paths</a></li>
+						      </ul>
+						    </div>
+						      <div id="test1" class="col s12">
+						    	<div class="lmn-pdpd-cnrt">
+						  			<div class="lmnpsd-p">
+										<div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Problem Description'">
+											<div ng-if="permission=='no'">{{data.doc_content}}</div>
+											<a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+											   onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+												<p>{{ data.doc_content || 'Enter Description' }}</p>
+											</a>
+										</div>
+									</div>
+
+						    	</div>
+						      </div>
+						       <div id="test2" class="col s12">
+						       <div class="lmn-pdpd-cnrt">
+						       <div class="lmnpsd-p">
+								   <div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Target Customers'">
+									   <div ng-if="permission=='no'">{{data.doc_content}}</div>
+									   <a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+										  onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+										   <p>{{ data.doc_content || 'Enter Description' }}</p>
+									   </a>
+								   </div>
+							   </div>
+								</div>
+						      </div>
+						      <div id="test3" class="col s12">
+						      <div class="lmn-pdpd-cnrt">
+						      	<div class="lmnpsd-p">
+									<div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Solution Summary'">
+										<div ng-if="permission=='no'">{{data.doc_content}}</div>
+										<a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+										   onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+											<p>{{ data.doc_content || 'Enter Description' }}</p>
+										</a>
+									</div>
+								</div>
+						      </div>
+						      </div>
+						       <div id="test4" class="col s12">
+						       <div class="lmn-pdpd-cnrt">
+						      	<div class="lmnpsd-p">
+									<div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Value Proposition'">
+										<div ng-if="permission=='no'">{{data.doc_content}}</div>
+										<a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+										   onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+											<p>{{ data.doc_content || 'Enter Description' }}</p>
+										</a>
+									</div>
+								</div>
+						      </div>
+						      </div>
+						       <div id="test5" class="col s12">
+						       <div class="lmn-pdpd-cnrt">
+						    		<div class="lmnpsd-p">
+										<div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Unfair Advantage'">
+											<div ng-if="permission=='no'">{{data.doc_content}}</div>
+											<a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+											   onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+												<p>{{ data.doc_content || 'Enter Description' }}</p>
+											</a>
+										</div>
+									</div>
+						      </div>
+						      </div>
+						       <div id="test6" class="col s12">
+						       <div class="lmn-pdpd-cnrt">
+						    		<div class="lmnpsd-p">
+										<div ng-repeat="data in startupdetail.summary_docs" ng-if="data.doc_title=='Monetization Paths'">
+											<div ng-if="permission=='no'">{{data.doc_content}}</div>
+											<a href="#" editable-textarea="data.doc_content" e-rows="7" e-cols="100%" ng-if="permission=='yes'"
+											   onbeforesave="saveDetail($data,'summary_docs',data.doc_id)">
+												<p>{{ data.doc_content || 'Enter Description' }}</p>
+											</a>
+										</div>
+									</div>
+						     </div>
+						      </div>
+					    </div>
+		          </div>
+			 </div>
+		 </div>
+		 
+	</div>
+	<div class="container  cnt mt10-lmn">
+		<div class="row rw-btm">
+				 <div class="col s12 m4 ">
+			          <div class=" lmn-box lmn-mnht">
+						  <div class="row rw-btm">
+						  <div class="col s12 m12 l12 no-padding">
+							  <div class="col s6 l6 m6">
+									<p class="lmn-pdviedo">Startup Pitch</p>
+							  </div>
+							  <div class="col s6 l6 m6">
+								  <div ng-if="permission=='yes' && startupdetailpitch.length==0">
+										<span href="#videoModal" modal open="openModal"></span>
+									  <div class="lmn-tmartifact right" ng-click="openModal=true"><i class="fa fa-plus" aria-hidden="true"></i></div>
+									</div>
+							  </div>
+						  </div>
+							  <div class="col s12 m12 l12 ">
+								<div class="row rw-btm">
+
+									<!-- TODO THIS DIRECTIVE NEED TO BE PROPER -->
+									<!--<video-display videoData="newyoutubeId"></video-display>-->
+									<!--<video Data="startupdetailpitch"></video>-->
+									<div class="col s12 m12 l12 ">
+									<div ng-if="startupdetailpitch.length>0" >
+										<div class="lmn-startpitchedt"  ng-repeat="viedo in startupdetailpitch">
+										<!--=====>	{{viedo.pitch_url}}-->
+											<div class="onhover-del">
+												<div ng-if="permission=='yes'">
+													<!--<div class="team-close"  confirmed-click="deletevideo(viedo.pitch_id)" ng-confirm-click="You want to delete Video?" >
+														<div><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+													</div>-->
+                                                  <!--  <div>
+                                                        <a  modal open="modalvideoedit" href="#modalvideoedit"></a>
+                                                        <div class="artifact-edit" ng-click="modalvideoedit=true">
+                                                            <div ><i class="fa fa-pencil icon-del" aria-hidden="true"></i></div>
+                                                        </div>
+                                                    </div>-->
+                                                    <div>
+                                                        <a  modal open="modalvedit" href="#modalvedit"></a>
+                                                        <div class="artifact-edit" ng-click="modalvFun(viedo.pitch_id,viedo.pitch_url)">
+                                                            <div ><i class="fa fa-pencil icon-del" aria-hidden="true"></i></div>
+                                                        </div>
+                                                    </div>
+
+												</div><!--{{viedo}}-->
+										  <!-- <div my-youtube code="viedo.video_embed_code" ></div>-->
+												<div>
+													<!--https://www.youtube.com/watch?v=qPGv9hIYWoc-->
+													<a target="_blank" href="{{viedo.pitch_url}}">	<img  ng-src="{{imageUrl}}{{viedo.pitch_image}}" class="responsive-img" ></a>
+												</div>
+									    </div>
+									</div>
+									</div>
+									</div>
+									<div ng-if="startupdetailpitch.length==0" class="lmn-nodata"> <p class="lmn-errormsg">ADD your video. No video are there to display</p></div>
+								</div>
+						  </div>
+			      	</div>
+					 </div>
+			      </div>
+			<!--****************************Artefacts**********************************-->
+			      <div class="col s12 m8 ">
+			          <div class=" lmn-box  lmn-mnht">
+						  <div class="col s12 m6 l6">
+							  <p class="lmn-pdviedo">Artefacts</p>
+						  </div>
+						  <div class="col s12 m6 l6">
+							  <!-- Modal Artefacts Trigger -->
+							  <div ng-if="permission=='yes'">
+								    <a href="#modalArtifact" modal open="modalArtifact"></a>
+							  		<div class="lmn-tmartifact right" ng-click="modalArtifact=true"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                         		</div>
+                          </div>
+						  <!--  Artefacts Directive -->
+						  <div class="row rw-btm">
+							  <div class="col s12 m12">
+							      <artifact artifctdata="startupdetailartifcat" ng-if="startupdetailartifcat.length>0"></artifact>
+								  <div ng-if="startupdetailartifcat.length==0" class="lmn-nodata"><p class="lmn-errormsg"> ADD your Artefacts. No Artefacts are there to display</p></div>
+							  </div>
+						  </div>
+			          </div>
+			      </div>
+			<!--****************************Team**********************************-->
+					<div class="col s12 m12">
+						<div class=" lmn-box">
+							<div class="col s12 m6 l6">
+								<p class="lmn-pdviedo">Team</p>
+							</div>
+							<div class="col s12 m6 l6 ">
+								<!--<a ui-sref="teamform"> <div class="lmn-tmartifact right"><i class="fa fa-plus" aria-hidden="true"></i></div></a>-->
+								<div ng-if="permission=='yes'">
+									<a href="#modalTeam" modal open="modalteam"></a>
+									<div class="lmn-tmartifact right" ng-click="modalteam=true"><i class="fa fa-plus" aria-hidden="true"></i></div>
+								</div>
+							</div>
+							<!--  Team Directive -->
+							<div class="row rw-btm " >
+								<div class="col s12 m12 l12"><!-- {{startupdetailteam}}************** -->
+								    <teammembers data="startupdetailteam" ng-if="startupdetailteam.length>0"></teammembers>
+								    <div ng-if="startupdetailteam.length==0" class="lmn-nodata"> ADD your team. No Team members are there to display</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--****************************Engaged Mentors**********************************-->
+			<!--<div class="col s12 m12">
+				<div class=" lmn-box">
+					<p class="lmn-pdviedo">Engaged Mentors</p>
+					<div class="row rw-btm " >
+						<div class="col s12 m12 l12 owl-carousel" id="lmn-menteam">
+							<div class="item">
+								<div class=" lmn-box onhover-del lmn-minheight">
+									<div class="row">
+										<div class="team-close">
+											<div><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+										</div>
+										<div class="col s4">
+											<img src="assets/images/mentors/mentorsimg/1.jpg" class="lmn-teamimg">
+										</div>
+										<div class="col s8">
+											<p class="lmn-teamnm name">Pinkesh Shah</p>
+											<p class="lmn-teamnm">Product Executive, Investor, Passion to Build Product Leadership Community</p>
+										</div>
+										<div class="col s12">
+											<p class="lmn-teamnm">Profile</p>
+											<p class="lmn-teamnm details"> am a very simple card. I am good at containing small bits of information.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class=" lmn-box lmn-minheight">
+									<div class="row">
+										<div class="col s4">
+											<img src="assets/images/mentors/mentorsimg/2.jpg" class="lmn-teamimg">
+										</div>
+										<div class="col s8">
+											<p class="lmn-teamnm name">Rahul Abhyankar</p>
+											<p class="lmn-teamnm">VP Product Management, Certified Lean Startup Educator, Institute of Product Leadership</p>
+										</div>
+										<div class="col s12">
+											<p class="lmn-teamnm">Profile</p>
+											<p class="lmn-teamnm details"> am a very simple card. I am good at containing small bits of information.
+											</p>
+										</div></div>
+								</div>
+							</div>
+							<div class="item">
+								<div class=" lmn-box lmn-minheight">
+									<div class="row">
+										<div class="col s4">
+											<img src="assets/images/mentors/mentorsimg/3.jpg" class="lmn-teamimg">
+										</div>
+										<div class="col s8">
+											<p class="lmn-teamnm name">Akshay Cherian</p>
+											<p class="lmn-teamnm">Business coach: Innovation, Sales & Marketing</p>
+										</div>
+										<div class="col s12">
+											<p class="lmn-teamnm">Profile</p>
+											<p class="lmn-teamnm details"> am a very simple card. I am good at containing small bits of information.
+											</p>
+										</div></div>
+								</div>
+							</div>
+							<div class="item">
+								<div class=" lmn-box lmn-minheight">
+									<div class="row">
+										<div class="col s4">
+											<img src="assets/images/mentors/mentorsimg/4.jpg" class="lmn-teamimg">
+										</div>
+										<div class="col s8">
+											<p class="lmn-teamnm name">Nandini Vaidyanathan MLE</p>
+											<p class="lmn-teamnm">Founder and Mentor, CARMa (creating access to resources and markets)</p>
+										</div>
+										<div class="col s12">
+											<p class="lmn-teamnm">Profile</p>
+											<p class="lmn-teamnm details"> am a very simple card. I am good at containing small bits of information.
+											</p>
+										</div></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>-->
+		  	</div>
+	</div>
+</section>
+
+<!-- Modal Video URL Form Structure -->
+<div id="videoModal" class="modal">
+	<div class="modal-content">
+        <div class="close-modal modal-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+		<form name="urlForm" novalidate ng-submit="viedourl(user)">
+			<div class="input-field col s12">
+				<!--<label for="website" class="">Enter Youtube Url</label>-->
+				<input id="website" name="website" ng-model="user.youtubeid" type="text" placeholder="Enter URL" required ng-pattern="/^(https?:\/\/)?[a-z0-9-]*\.?[a-z0-9-]+\.[a-z0-9-]+(\/[^<>]*)?$/">
+				<label>Enter Startup Pitch Url</label>
+				<p ng-show="urlForm.website.$error.url && (urlForm.website.$dirty)" class="star-required">Enter a valid url.</p>
+				<p ng-show="urlForm.website.$error.pattern" class="star-required">Please enter  valid url.</p>
+			</div>
+			<div class="s12 right">
+				<button type="submit"   class="waves-effect waves-light btn lmn-mbtart modal-close" >ADD</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Modal Artefacts Form Structure -->
+<div id="modalvedit" class="modal">
+    <div class="modal-content">
+        <div class="close-modal modal-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="lmnstfm-hd">Edit Viedo Startup Pitch</div><!--{{vpitchid}}==>-->
+        <div class="lmn-modleedit"  confirmed-click="deletevideo(vpitchid)" ng-confirm-click="You want to delete Video?" >
+            <div><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+        </div>
+        <form name="urlForm" novalidate ng-submit="submitted=true;urlForm.$valid &&  saveviedo(vpitchid,vpitchurl)">
+            <div class="input-field col s12"><!--{{user}}-->
+                <!--<label for="website" class="">Enter Youtube Url</label>-->
+                <input  name="website" ng-model="vpitchurl" type="text" placeholder="Enter URL" required ng-pattern="/^(https?:\/\/)?[a-z0-9-]*\.?[a-z0-9-]+\.[a-z0-9-]+(\/[^<>]*)?$/">
+                <p ng-show="urlForm.website.$error.url && (urlForm.website.$dirty)" class="star-required">Enter a valid url.</p>
+                <p ng-show="urlForm.website.$error.pattern" class="star-required">Please enter  valid url.</p>
+                <input type="hidden" ng-model="vpitchid">
+            </div>
+            <div class="s12 right">
+                <button type="submit"   class="waves-effect waves-light btn lmn-mbtart modal-close" >Save</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- Modal Artefacts Form Structure -->
+<div id="modalArtifact" class="modal">
+	<div class="modal-content">
+        <div class="close-modal modal-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+		<form name="arifcatform" ng-submit="submitted=true;arifcatform.$valid && artifact(users)" novalidate>
+			<div input-field class="s12" >
+				<input type="text" name="website" ng-model="users.artifacturl" placeholder="Enter the valid Url" required ng-pattern="/^(https?:\/\/)?[a-z0-9-]*\.?[a-z0-9-]+\.[a-z0-9-]+(\/[^<>]*)?$/">
+				<label>Artefact Url</label>
+                <p ng-show="arifcatform.website.$error.url && (urlForm.website.$dirty)" class="star-required">Enter a valid url.</p>
+                <p ng-show="arifcatform.website.$error.pattern" class="star-required">Please enter  valid url.</p>
+			</div>
+			<!--<div input-field class="s12">
+				<input type="text" >
+				<label>Artefact Description</label>
+			</div>-->
+			<div class="s12 right">
+				<button type="submit"  class="waves-effect waves-light btn lmn-mbtart  modal-close">Add</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Modal Team Form Structure -->
+<div id="modalTeam" class="modal lmn-modal">
+	<div class="modal-content">
+        <div class="close-modal modal-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+		<div class="lmnstfm-hd">Team</div>
+            <div class="row">
+               <div class="input-field col s11">
+                    <input id="icon_prefix2" type="text" class="validate" placeholder="Email" ng-model="user.member_email_id">
+                </div> 
+             <!--  submitted=true;signupForm.$valid && <div class="input-field col s11 lmn-mtmblnsu">
+				  <input id="email1" type="email" class="validate lnm-input" name="email" ng-model="user.member_email_id" required>
+				  <label for="email1">Email</label>
+					<div class="error" ng-show=" teamForm.email.$invalid">
+						<small class="star-required" ng-show=" submitted && teamForm.email.$error.required">email is required.</small>
+					</div>
+				</div> -->
+                <div class="input-field col s1">
+                    <button class="waves-effect btn-flat lnm-btnlft" ng-click="emailsearch(user.member_email_id)"> <i class="fa fa-search lmn-stpicon" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        <form  novalidate ng-submit="teamForm(user)">
+             <table  class="striped">
+                <tbody><!--{{serachemailteam}}-->
+                <tr>
+                    <td><b>Profile Pic</b></td>
+                    <td><!--<img src="assets/images/mentors/mentorsimg/1.jpg" >-->
+                        <img on-error="assets/images/defaulterror/default-logo.png"  ng-src="{{imageUrl}}{{serachemailteam.search_user_profile_pic}}" class="lmn-teamimg"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>{{serachemailteam.search_user_name}}</td>
+                </tr>
+                <tr>
+                    <td><b>Designation</b></td>
+                    <td>{{serachemailteam.search_user_designation}}</td>
+                </tr>
+                <tr>
+                    <td><b>Phone Number</b></td>
+                    <td>{{serachemailteam.search_user_mobile}}</td>
+                </tr>
+               <!-- <tr>
+                    <td><b>About</b></td>
+                    <td>webdevelopment Company webdevelopment Companywebdevelopment Companywebdevelopment Companywebdevelopment Companywebdevelopment Company</td>
+                </tr>-->
+                </tbody>
+            </table>
+		<div class="s12 right">
+			<button  type="submit"  class="waves-effect waves-light btn lmn-mbtart modal-close ">Add </button>
+		</div>
+        </form>
+		<!--<form class="teamForm"  ng-submit="teamForm(user)" >
+			<div class="row">
+			<div class="input-field col s12 l6 m6">
+				<input id="name" type="text" class="validate" ng-model="user.tmname" required>
+				<label for="name">Name</label>
+			</div>
+			<div class="input-field col s12 l6 m6">
+				<input id="designation" type="text" class="validate" ng-model="user.tmdesignation" required>
+				<label for="designation">Designation</label>
+			</div>
+			<div class="input-field col s12">
+				<textarea id="textarea1" class="materialize-textarea" length="120" required ng-model="user.tmdescription"></textarea>
+				<label for="textarea1">About Team member</label>
+			</div>-->
+			<!--<div class="input-field col s12">
+				<input id="link" type="text" class="validate" ng-model="user.tmlink" >
+				<label for="link">Link</label>
+			</div>-->
+			<!--<div class="file-field input-field col s12">
+				<div class="btn">
+					<span>Profile Pic</span>
+					<input type="file" >
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text" base-sixty-four-input  placeholder="Team Profile Image" ng-model="user.tmfile">
+				</div>
+			</div>-->
+				<!--<div class="brws-btn">
+					<span>Browse</span>
+					<input type="file" id="fUpload" ng-change="checkextension()" ng-model="user.checkscreen" base-sixty-four-input multiple="false"  required>
+					<div class="error" ng-if="fileerror">{{fileerror}}</div>
+					</div>
+			<div class="s12 right">
+				<button  type="submit"  class="waves-effect waves-light btn lmn-mbtart ">Add Team</button>
+			</div>
+			</div>
+		</form>-->
+
+	</div>
+</div>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+	$('ul.tabs').tabs();
+   /* $('#modalvedit').modal({
+    complete: function () {
+    alert('Closed');
+    }
+    })*/
+
+	</script>

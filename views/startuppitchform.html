@@ -1,0 +1,72 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+<section class="lnm-startupfm">
+    <div class="container">
+        <div class="row rw-btm">
+            <div class="col l8 s12 m8 offset-l2 offset-s2">
+                <div class="card back nomargin">
+                    <div class="card-content">
+                       <div class="lmnstfm-hd">Create Startup Pitch</div>
+                        <div class="row rw-btm">
+                            <form name="startuppitchform">
+                            <div class="input-field col s12">
+                                <input id="pitchname" type="text" class="validate" ng-model="startup.pitchname" required>
+                                <label for="pitchname">Pitch Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="pitchtagline" type="text" class="validate" ng-model="startup.pitchtagline" required>
+                                <label for="pitchtagline">Pitch TagLine</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea" length="120" required ng-model="startup.pitchdescription"></textarea>
+                                <label for="textarea1">Pitch Description</label>
+                            </div><br><br>
+                            <select  class="browser-default" ng-model="startup.pitchcategory" required>
+
+                              <option value=""  selected>Choose your category</option>
+                                <!--  <option value="1">Startup</option>
+                                <option value="2">Mentor</option>
+                                <option value="3">Incubator</option>
+                                <option value="3">Investor</option>-->
+                                <option ng-repeat="cat in categories" value="{{cat.category_name}},{{cat.category_seo_url}}">{{cat.category_name}}
+
+                                </option>
+                            </select>
+                       <!--   <div class="file-field input-field s12">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file" >
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Pitch Logo">
+                                </div>
+                            </div>
+                                <div class="file-field input-field s12">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file" multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Pitch Cover Image">
+                                    </div>
+                                </div>-->
+                           <div class="row rw-btm">
+                                <center><a ng-click="startuppitch(startup)" class="waves-effect waves-light btn lnm-signin">Create startup pitch</a></center>
+                            </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script>
+    $(document).ready(function() {
+        $('input#input_text, textarea#textarea1').characterCounter();
+    });
+</script>

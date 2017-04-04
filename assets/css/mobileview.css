@@ -1,0 +1,81 @@
+@media screen and (max-width:650px) 
+{
+    .container
+	{
+		width:85% !important;
+	}
+	.lnm-howitwork {
+	    background-image: url(../images/howitworks/howitworks-bg.jpg);
+	    height: 236px;
+	    padding :15px;
+	}
+	.cont-mobile
+	{
+	    width: 100% !important;
+	}
+	.mttop100 
+	{
+    	margin-top: 62px;
+	}
+	.lmn-topbox 
+	{
+	    background-color: white;
+	    padding: 15px;
+	    border: 1px solid lightgray;
+	    margin-bottom: 12px;
+	}
+
+}
+/*..................css for tablets-------------*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+{
+	.cnt {
+		width: 95%!important;
+	}
+	.lmntab-mnht
+	{
+	 min-height: 170px;
+	}
+	.lmn-navtabs.active
+	{
+		width: 100%;
+	}
+	.lmx-hvbox
+	{
+		min-height: 171px;
+	}
+	.leader-cir {
+		font-size: 75px !important;
+		 margin-left: 0px;
+	}
+	/*.lmntab-pddeattagline
+	{
+		text-align: center!important;
+	}*/
+	.lmn-startupicns {
+		text-shadow: 1px 1px black;
+		color: white;
+		font-weight: bold;
+		margin-left: 17px;
+		margin-right: 17px;
+		font-size: 14px;
+	}
+	.rating-cnt
+	{
+		width:95% !important;
+	}
+	.lmn-mentormin
+	{
+		min-height: 147px;
+	}
+	.lmn-ldrtingname
+	{
+		text-align: left;
+	}
+	.lmn-tabsbnf
+	{
+		min-height: 150px;
+	}
+}

@@ -1,0 +1,41 @@
+<!--
+<div class="query_stats_holder">
+<div class="stats">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+        <span>{{querystats.conversations_count}}</span> Comments
+</div>
+<div class="stats" ng-click="updateStats('likes_count',user_like)">
+
+                    <i class="fa fa-thumbs-up" aria-hidden="true" ng-class="(user_like=='yes') ? 'active':''"></i>
+                    <span>{{likes_count}}</span> Likes
+</div>
+<div class="stats" ng-click="updateStats('kudos_count',user_kudos)">
+
+                    <i class="fa fa-trophy" aria-hidden="true"  ng-class="(user_kudos=='yes') ? 'active':''"></i>
+                    <span>{{kudos_count}}</span>  Kudos
+</div>
+<div class="stats" ng-click="updateStats('insights_count',user_insight)">
+
+                    <i class="fa fa-lightbulb-o" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                    <span>{{insights_count}}</span> Insights
+</div>
+</div>
+-->
+<div class="query_stats_holder">
+    <div class="stats">
+        <i class="fa fa-comment" aria-hidden="true"></i>
+        <span class="lmn-starticommnt">{{querystats.conversations_count}} &nbsp;Comments</span>
+    </div>
+    <div class="stats" ng-click="updateStats('likes_count',user_like)">
+        <i class="fa fa-thumbs-up" aria-hidden="true" ng-class="(user_like=='yes') ? 'active':''"></i>
+        <span class="lmn-startlins">{{likes_count}} Likes</span>
+    </div>
+    <div class="stats" ng-click="updateStats('kudos_count',user_kudos)">
+        <i class="fa fa-trophy" aria-hidden="true"  ng-class="(user_kudos=='yes') ? 'active':''"></i>
+        <span class="lmn-startkudos">{{kudos_count}} Kudos</span>
+    </div>
+    <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+        <i class="fa fa-lightbulb-o" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+        <span class="lmn-startinsight">{{insights_count}} Insights</span>
+    </div>
+</div>

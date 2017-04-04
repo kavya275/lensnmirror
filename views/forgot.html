@@ -1,0 +1,49 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+<section class="lnm-login-signup">
+    <div class="container">
+        <div class="row rw-btm ln-mt100">
+            <div class="col l6 s12 m6 offset-m3 offset-l3">
+                    <div class="card back nomargin">
+                        <div class="card-content">
+                            <form name="forgotform" novalidate ng-submit="submitted=true;forgotform.$valid && ForgotPassword(user)">
+                            <center>FORGOT PASSWORD</center>
+                            <div class="row rw-btm">
+                                <!--<div class="input-field col s12">
+                                    <input id="name" type="text" class="validate" required>
+                                    <label for="name">Email</label>
+                                </div>-->
+                                <div class="input-field col s12 lmn-mtmblnsu">
+                                    <input id="email" type="email" class="validate lnm-input" name="email" ng-model="user.email" required>
+                                    <label for="email">Email</label>
+                                    <div class="error" ng-show=" forgotform.email.$invalid">
+                                        <small class="star-required" ng-show=" submitted && forgotform.email.$error.required">email is required.</small>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 lmn-mtmblnsu">
+                                    <select class="browser-default" ng-model="user.role" name="role" required>
+                                        <option value=""  selected>Choose Primary</option>
+                                        <option value="startup">Startup</option>
+                                        <option value="mentor">Mentor</option>
+                                        <option value="incubator">Incubator</option>
+                                        <option value="investor">Investor</option>
+                                    </select>
+                                    <div class="error" ng-show="forgotform.role.$invalid">
+                                        <small class="star-required" ng-show=" submitted && forgotform.role.$error.required"> select role is required.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row rw-btm">
+                                <center><button type="submit"  class="waves-effect waves-light btn lnm-signin">Send</button></center>
+                            </div>
+                            </form>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>

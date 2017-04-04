@@ -1,0 +1,16 @@
+{
+  "idea": "Fuuchsia",
+  "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/fuuchsia.jpg",
+  "rating":"800",
+  "tag_line": "Personalize your footwear",
+  "storyboard": [
+    {
+      "problem_description": "Modern day youth and working women buy a large number of shoes/heels to achieve diversity. They carry several pairs while traveling as well to match with their dresses. The amount of expense to buy these shoes and the amount of space needed to carry them has room for optimization.",
+      "target_customers": "Women looking for continuous diversity and individuality in their apparel and footwear.Women really mindful about fashion and comfort.",
+      "solution_summary": "Swapps by Fuuchsia is a one of a kind convertible footwear for women which can be customized on demand to fit the occasion and the dress. No need to carry multiple shoes anymore. Ample diversity in design and change the look of the shoes on demand",
+      "value_proposition": "To Youth: Swapps is the only pair of shoes you would need to embrace every attire. The convertible straps with several colors and designs would never let you be anything but at your best! To Working Women: Swapps is the only pair of shoes you would ever need whether you are at a business meeting or traveling for work. They are comfortable and have diverse styles all on one sole!",
+      "unfair": "unfair",
+      "monetization": "monetization"
+    }
+  ]
+}

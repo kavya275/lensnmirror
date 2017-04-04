@@ -1,0 +1,20 @@
+{
+  "response": "success",
+  "result": "yes",
+  "requestData": [
+    {
+      "email": "",
+      "session_id": "",
+      "role": "",
+      "startup_name": "Glukocare",
+      "startup_seo_url": "glukocare",
+      "tag_line": "Diabetes Care, Personalized",
+      "startup_category": "Bio Tech",
+      "category_seo_url": "bio_tech",
+      "brief_description": "I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively",
+      "startup_pic": "",
+      "startup_cover_pic": "",
+      "editable": "no"
+    }
+  ]
+}

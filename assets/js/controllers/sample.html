@@ -1,0 +1,120 @@
+/*angular.module('lensnmirrorApp.controllers', [
+'lensnmirrorApp.services',
+'lensnmirrorApp.directives'
+])*/
+/*.controller('timeController', function($scope, $stateParams, $state,urls,$http) {
+console.log('hai...........');
+console.clear()
+$scope.statename=$state.current.name;
+console.log($state.current.name);
+
+})*/
+/*
+.controller('mainController', function($scope, $stateParams, $state,urls,$http) {
+console.log('hai...........');
+
+
+})
+.controller('stateController', function($scope, $stateParams, $state,urls) {
+console.log('oyeeeee...........');
+$scope.apiHref = urls.apiHref;
+$scope.currState = $state;
+
+$scope.$watch('currState.current.name', function (newValue, oldValue) {
+console.log(newValue);
+$scope.currentstate = newValue;
+});
+
+$scope.tabparms=$stateParams.startupId;
+console.log($stateParams.startupId);
+
+})
+.controller('startupCtrl', function ($scope, $stateParams, $state, $http, urls) {
+console.log("startups");
+$scope.apiHref = urls.apiHref;
+var startupReq={
+"requestMessage": "startuplist",
+"requestId": "53",
+"response": "success",
+"responseCode": "200",
+"result": "yes",
+"requestData": [
+{
+"startups": "yes"
+}
+]
+}
+console.log(startupReq);
+$http.get('json/startup.json', startupReq).
+success(function (data, status, headers, config) {
+console.log(data);
+if(data.result=='yes'){
+$scope.startups=data.resultData[0].startups;
+console.log($scope.startups);
+
+} else{
+$scope.failureMessage=data.resultData[0].message;
+
+}
+}).
+error(function (data, status, headers, config) {
+console.log("error");
+
+});
+
+})
+
+.controller('startupdetailsCtrl', function ($scope, $stateParams, $state, $http, urls) {
+console.log("startupdetailsCtrl");
+$scope.apiHref = urls.apiHref;
+var startupdetailsReq={
+"requestMessage": "startupdetailslist",
+"requestId": "53",
+"response": "success",
+"responseCode": "200",
+"result": "yes",
+"requestData": [
+{
+/!*"userId": "01"*!/
+}
+]
+}
+console.log(startupdetailsReq);
+console.log($stateParams.startupId);
+var url="json/"+$stateParams.startupId+".json";
+console.log(url);
+
+$http.get(url).success(function (data, status, headers, config) {
+console.log(data);
+$scope.startupdetail=data;
+$scope.startupdetailsdata=data.storyboard[0];
+}).
+error(function (data, status, headers, config) {
+console.log("error");
+
+});
+
+})
+.filter('timeline', function() {
+return function(input) {
+var output=0;
+if(input<=100){
+output=((33*input)/90);
+}
+else if(input>100 && input<=1000){
+output=((33*input)/900)+33.33;
+
+}else if(input>1000){
+output=((33*input)/9000)+66.66;
+}
+return parseFloat(output).toFixed(2);
+}
+
+})
+
+
+
+
+*/
+
+/*9964544064*/

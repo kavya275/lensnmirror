@@ -1,0 +1,126 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+<section class="lnm-startupfm">
+    <div class="container">
+        <div class="row rw-btm">
+            <div class="col l8 s12 m8 offset-l2 offset-s2">
+                <div class="card back nomargin">
+                    <div class="card-content">
+                        <div class="lmnstfm-hd">Profile</div>
+                        <div class="row rw-btm">
+                            <form name="editForm" >
+                                <div class="input-field col s12">
+                                    <input id="name" type="text"  ng-model="user.name">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input-field col s12"><!--{{user}}-->
+                                    <input id="designation" type="text"   ng-model="user.designation">
+                                    <label for="designation">Designation</label>
+                                </div>
+                                <div class="row">
+                                   <!-- <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>Profile Pic</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
+                                    </div>-->
+                                    <div class="col l12 m12">
+                                        <span>Profile Pic </span>
+                                        <img on-error="assets/images/defaulterror/default-logo.png" ng-src="{{imageUrl}}{{user.profile_pic}}"  class="lmn-profileimg"/>
+                                    </div>
+                                    <div class="brws-btn col l12 m12">
+                                        <span>Profile Pic Upload</span>
+                                        <input type="file" ng-model="user.upload" base-sixty-four-input multiple="false" >
+                                    </div><!--{{imageUrl}}{{user.profile_pic}}********-->
+
+                                </div>
+                                <div class="input-field col s12">
+                                    <!-- Modal Profileedit Trigger -->
+                                    {{user.email}}
+                                    <span href="#modalDemo" modal open="openModal"></span>
+                                    <span  ng-click="openModal=true">
+                                        <i class="fa fa-pencil profil-icon" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                    <!--<div class="input-field col s12">  ng-src="{{imageUrl}}{{user.profile_pic}}"
+                                    <input id="mobile" type="text" class="validate" ng-pattern="/^[0-9,]{1,10}$/" maxlength="10" ng-model="user.mobile" required>
+                                    <label for="mobile">Phone Number</label>
+                                    <div class="error" ng-show="  signupForm.mobile.$invalid">
+                                        <small class="star-required" ng-show=" submitted  &&  editForm.mobile.$error.required">Phone Number is required.</small>
+                                        <p ng-show="editForm.mobile.$error.pattern" class="help-block"><span class="star-required">Enter a valid phone number.</span></p>
+                                    </div>
+                                </div>-->
+                                <div class="input-field col s12 lmn-mtmblnsu">
+                                    <input id="mobile" type="text"  ng-model="user.mobile"  lnm-input" name="mobile" required>
+                                    <label for="mobile">Phone Number</label>
+                                   <!-- <div class="error" ng-show="  editForm.mobile.$invalid">
+                                        <small class="star-required" ng-show=" submitted  &&  editForm.mobile.$error.required">Phone Number is required.</small>
+                                        <p ng-show="editForm.mobile.$error.pattern" class="help-block"><span class="star-required">Enter a valid phone number.</span></p>
+                                    </div>ng-pattern="/^[1-9]{1}[0-9]{9}$/" minlength="10" maxlength="10"-->
+                                </div>
+                                <div class="input-field col s12 lmn-mtmblnsu"><br>
+                                   <b>Primary Role:</b> {{user.role}}
+                                    <!--<select class="browser-default" name="role" required ng-model="user.role">
+                                        <option value=""  selected>Choose Primary</option>
+                                        <option value="startup">Startup</option>
+                                        <option value="mentor">Mentor</option>
+                                        <option value="incubator">Incubator</option>
+                                        <option value="investor">Investor</option>
+                                    </select>-->
+                                </div>
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea" length="120"  ng-model="user.about_user"></textarea>
+                                    <label for="textarea1">About User </label>
+                                </div>
+                                <div class="row rw-btm "><!--profileformCrtl-->
+                                    <div class="col s4 offset-s2"><button type="submit"  ng-click="profileform(user)" class="waves-effect waves-light btn lnm-signin">update</button></div>
+                                    <!--<center><a ng-click="" class="waves-effect waves-light btn lnm-signin right">Send</a></center></div>submitted=true;editForm.$valid &&  -->
+                                    <div  class="col s6"><a href="{{href}}changepassword"><button type="submit"  class="waves-effect waves-light btn lnm-signin">change Password</button></a></div><br>
+                                </div>
+                            </form>
+                              <!-- Modal Profileedit Structure -->
+                                <div id="modalDemo" class="modal">
+                                    <div class="modal-content">
+                                        <form ng-submit="profileemailform(user)">
+                                        <div input-field class="s12">
+                                            <input id="email" type="text" class="validate" value=""  ng-model="user.email">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="s12 right">
+                                            <center><button type="submit"  class="waves-effect waves-light btn lnm-signin">update</button></center><br>
+                                        </div>
+                                        </form>
+                                       <!-- <button type="button"  class="waves-effect waves-light btn" ng-click="closeMe()">Close</button>-->
+                                    </div>
+                                </div>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+/*    $(document).ready(function() {
+        $(".flip").click(function() {
+            $(".emailhd").css({"display":"block"})
+            $(".show-hide").css({"display":"none"})
+        });
+    });
+    */
+
+</script>
+<!-- <div class="input-field col s12">
+        <div class="emailhd">
+        <input id="email" type="text" class="validate" value="kavya@creatise.in"  ng-model="user.email">
+        <label for="email">Email</label>
+        </div>
+        <div class="show-hide"><b> Email:&nbsp;&nbsp;</b>kavya@creatise.in <i class="fa fa-pencil flip" aria-hidden="true"></i></div>
+
+        </div>-->

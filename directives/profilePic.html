@@ -1,0 +1,23 @@
+<!--
+<div class="user_display">
+	<div class="profile_pic {{profdet.role}}">
+		<img on-error="assets/images/defaulterror/default-logo.png" ng-src="{{imgUrl}}{{profdet.profile_pic}}" class="">
+	</div>
+	<div class="user_detail">
+		<div class="user_name">{{profdet.name}}</div>
+		<div class="date_time">{{creationdate | date : 'd-M-yyyy'}}</div>
+	</div>
+</div>
+-->
+<div class="user_display">
+	<div class="profile_pic {{profdet.role}}">
+		<img on-error="assets/images/defaulterror/default-logo.png" ng-src="{{imgUrl}}{{profdet.profile_pic}}" >
+	</div>
+	<div class="user_detail">
+		<div class="user_name">{{profdet.name}}</div>
+		<div class="date_time">
+			<span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{creationdate | date : 'd-M-yyyy'}}</span>
+			<span ng-if="status!=''">Query Status:</span><span class="lmn-querycl" ng-if="status!=''">Closed</span>
+		</div>
+	</div>
+</div>

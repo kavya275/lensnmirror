@@ -1,0 +1,186 @@
+
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+
+<!--*************MENTORS SECTION************-->
+<section class="lmn-mentors">
+	<div class="container cnt">
+ 	 	<div class="row">
+   			 <div class="col s12 "><!--==>{{mentordetails}}-->
+   			  	<div class="lmn-box ">
+   			  		<div class="row rw-btm"><!--{{role}}===>-->
+	   			  		<div class="col s12 m12 l12">
+		   			  		<div class="col s12 m4 l2 ">
+								<center><img on-error="assets/images/defaulterror/default-logo.png"  ng-src="{{imgUrl}}{{mentordetails.profile_pic}}" class="lmn-mentorsdetailsimg lmn-mntordtls"/></center>
+								<!--<center><img src="assets/images/mentors/startup-01.jpg" class="lmn-mentorsdetailsimg lmn-mntordtls"></center>-->
+		   			  		</div>
+		   			  		<div class="col s12 m6 l3 "><!--{{permission}}====>{{mentordetails.mentor_user_id}}=={{localcuserid}}-->
+		   			  			<p class="lmn-mntdtlname" ng-if="permission=='yes'"><!--{{mentordetails.user_id}}<br>{{localcuserid}}-->
+									<a href="#"
+									   editable-text="mentordetails.mentor_name"
+									   onbeforesave="mentorsaveDetail($data,'name')">{{ mentordetails.mentor_name || "empty" }}</a>
+								</p>
+								<p class="lmn-mntdtlname" ng-if="permission=='no'">{{mentordetails.mentor_name}}</p>
+
+                                <p class="almn-addmntdtl" ng-if="permission=='yes'">
+                                    <a href="#"
+                                       editable-text="mentordetails.designation"
+                                       onbeforesave="mentorsaveDetail($data,'designation')">{{ mentordetails.designation || "empty" }}</a>
+                                </p>
+                                <p class="almn-addmntdtl" ng-if="permission=='no'">{{ mentordetails.designation}}  </p>
+
+<!--{{mentordetails.mentor_user_id}}=={{localcuserid}}-->
+                                    <p  ng-if="permission=='yes'">
+                                        <a href="{{mentordetails.linked_in_profile}}" target="_blank">
+                                         <img src="assets/images/socialicon/linkedin.png" />
+                                        </a>
+                                        <a  editable-text="mentordetails.linked_in_profile"
+                                           onbeforesave="mentorsaveDetail($data,'linked_in_profile')" >Edit Linkedin Link</a>
+                                    </p>
+                                    <p class="almn-addmntdtl" ng-if="permission=='no'">
+										<a href="{{mentordetails.linked_in_profile}}" target="_blank"><img src="assets/images/socialicon/linkedin.png" target="_blank"/> </a></p>
+
+		   			  		</div>
+		   			  		<div class="col s12 m10 l6">
+		   			  			<div class="col s12 m6 l7 lmn-mrginmntdt">
+		   			  					<p class="lmn-mntdlsrating">Accessibility</p>	
+										<p class="lmn-mntdlsrating">Relevant Expertise</p>	
+										<p class="lmn-mntdlsrating">Constructive & Objective Feedback</p>	
+										<p class="lmn-mntdlsrating">Actionable Insights and Guidance</p>
+										<p class="lmn-mntdlsrating">Access to Valuable Network</p>	
+		   			  			</div>
+		   			  			<div class="col s12 m6 l5 lmn-mrginmntdt">
+		   			  			<div class="lmn-mntdlsrating"><input-stars ng-model="prop2" max="5" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+		   			  			<div class="lmn-mntdlsrating"><input-stars ng-model="prop2" max="5" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+		   			  			<div class="lmn-mntdlsrating"><input-stars ng-model="prop2" max="5" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+		   			  			<div class="lmn-mntdlsrating"><input-stars ng-model="prop2" max="5" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+		   			  			<div class="lmn-mntdlsrating"><input-stars ng-model="prop2" max="5" ng-attr-readonly="{{ enableReadonly || false }}"></input-stars>	</div>
+		   			  			</div>
+		   			  		</div>
+		   			  		<div class="col s12 l1 m2">
+		   			  			<div class="c100 p100 large lmn-mentordetails">
+				                    <span>120</span>
+				                    <div class="slice">
+				                        <div class="bar"></div>
+				                        <div class="fill"></div>
+				                    </div>
+				                </div>
+		   			  		</div>
+	   			  		</div>
+   			  		</div>
+   			  	</div>
+   			  </div><br>
+   			  <div class="col s12 ">
+   			  <div class="col s3 no-padding">
+			  		<ul class="tabs lmn-mt-38 lmn-mt27"  >
+                        <li class="tab lnm-transtab col s3"><a class="active" href="#test1">Profile</a></li>
+                      <!--**************tabs*****************-->
+                       <!-- <li class="tab col s3  lnm-transtab"><a href="#test2">Mentored Startups</a></li>
+                        <li class="tab col s3  lnm-transtab"><a href="#test3">Reviews</a></li>-->
+                    </ul>
+                    </div>
+	   			  	<div class="lmn-box lmn-mt75" >
+	   			  		<div class="row ">
+		   			  		<div class="col s12 m12 l12">
+			   			  		 <div id="test1" class="col s12">
+			   			  		 <div class="col s12">
+				   			  		 	<div class="col s2">
+				   			  		 		<p>About Me</p>	
+				   			  		 	</div>
+				   			  		 	<div class="col s10">
+				   			  		 		<p class="lmn-mentosdtlprofil" ng-if="permission=='yes'">
+                                                <a href="#" editable-text="mentordetails.about_user"
+                                                   onbeforesave="mentorsaveDetail($data,'about_user')">{{ mentordetails.about_user || "About mentor" }}</a>
+                                            </p>
+                                            <p class="lmn-mentosdtlprofil" ng-if="permission=='no'">{{ mentordetails.about_user }}</p>
+				   			  		 	</div>
+			   			  		 	</div>
+			   			  		 	<div class="col s12">
+			   			  		 	<div class="col s2">
+			   			  		 		<p>Hobbies</p>
+			   			  		 	</div>
+			   			  		 	<div class="col s10">
+                                        <p class="lmn-mentosdtlprofil" ng-if="permission=='yes'">
+                                            <a href="#" editable-text="mentordetails.hobbies"
+                                               onbeforesave="mentorsaveDetail($data,'hobbies')">{{ mentordetails.hobbies || "empty" }}</a>
+                                        </p>
+			   			  		 		<p class="lmn-mentosdtlprofil" ng-if="permission=='no'">{{ mentordetails.hobbies }}</p>
+			   			  		 	</div>
+			   			  		 	</div>
+			   			  		 	<div class="col s12">
+			   			  		 	<div class="col s2">
+			   			  		 		<p> Interests</p>
+			   			  		 	</div>
+			   			  		 	<div class="col s10">
+                                        <p class="lmn-mentosdtlprofil" ng-if="permission=='yes'">
+                                            <a href="#" editable-text="mentordetails.interests"
+                                               onbeforesave="mentorsaveDetail($data,'interests')">{{ mentordetails.interests || "empty" }}</a>
+                                        </p>
+			   			  		 		<p class="lmn-mentosdtlprofil" ng-if="permission=='no'">{{mentordetails.interests}}</p>
+
+			   			  		 	</div>
+			   			  		 	</div>
+			   			  		 </div>
+                                <!--****************tab content******************-->
+			   			  		<!-- <div id="test2" class="col s12">
+			   			  			<div  class="col s12">
+					    	<a href="{{apiHref}}startupdetails/{{startuplist.startupId}}"><div class="col s12 m6 l4" ng-repeat="startuplist in startups | limitTo:3">
+					    		<div class="card startupcard">
+							            <div class="card-image">
+							              <img src="assets/images/startup/startup-02.jpg">
+							              <div class="lnm-onimgtext">
+							              <span class="lmn-startupicns"><i class="fa fa-thumbs-up mrt-icon" aria-hidden="true"></i>27</span>
+							              <span class="lmn-startupicns"><i class="fa fa-eye mrt-icon" aria-hidden="true"></i>05</span>
+							              <span class="lmn-startupicns"><i class="fa fa-user mrt-icon" aria-hidden="true"></i>26</span>
+							              <span class="lmn-startupicns"><i class="fa fa-users mrt-icon" aria-hidden="true"></i>95</span></div>
+							            </div>
+							             <div class="lmn-slidebubble">
+							            	<span  class="lmn-sld">
+							            	&lt;!&ndash;TIMELINE DIRECTIVE&ndash;&gt;
+							            		<timeline timelinedata="startuplist"></timeline>
+							            	</span>
+							            </div>
+							            <div class="card-content startupcard-content">
+							            <div class="row rw-btm">
+							            	<div class="col l9 m9 ">
+								            	<p class="lmn-startnm">{{startuplist.startupname}}</p>
+								            	<p class="lmn-tagline">{{startuplist.startuptagline}}</p>
+								            	<p class="lmn-tagline">E-commerce</p>
+							            	</div>
+							            	<div class="col l3 m3">
+							            		  <div class="c100 p100 small">
+									                    <span>{{startuplist.startupratingnum}}</span>
+									                    <div class="slice">
+									                        <div class="bar"></div>
+									                        <div class="fill"></div>
+									                    </div>
+									                </div>
+							            	</div>
+							            	<div class="col l12 m12 ">
+							              <p class="lmn-strtcnt">{{startuplist.startupdescription}}</p>
+							            </div>
+							            </div></div>
+							          </div></div></a>
+							        </div>
+			   			  		 </div>-->
+			   			  		<!-- <div id="test3" class="col s12">
+			   			  		 Reviews
+			   			  		 </div>-->
+		   			  		</div>
+	   			  		</div>
+	   			  	</div>
+	   			  </div>
+   			</div>
+   	</div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+    });
+
+</script>
+

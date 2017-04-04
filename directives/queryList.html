@@ -1,0 +1,101 @@
+<div class="row " style="padding:10px;">
+    <div class="row " style="padding:10px;">
+        <div class="col s12 m8">
+            <profile-detailpic profdet="querydata.created_by" creationdate="querydata.created_on"></profile-detailpic>
+        </div>
+        <div class="col s12 m3 " style="position:relative;">
+            <div ng-if="permission=='yes'">
+                <span>Pending</span>&nbsp;&nbsp;&nbsp;<span>
+                 <switch id="enabled" name="enabled" ng-model="switch.enable" class="blue"  ng-change="changestatus(querydata.startup_id._id,queryStats.insightId,switch.enable)"></switch></span>
+                <span>&nbsp;&nbsp;&nbsp;Closed</span>
+            </div><!--{{currentstate}}===>-->
+            <div class="lmn-editdelet" ng-if="permission=='yes'" >
+                <div class="query"  confirmed-click="deletquery(querydata)"  ng-confirm-click="You want to delete Query?"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                <div class="queryedit" ng-if="querydata.conversations_count==0 && currentstate=='querydetials'">
+                    <a  modal open="editQury" href="#editQury"></a>
+                    <i class="fa fa-pencil" aria-hidden="true" ng-click="modaleditFun(querydata)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l12">
+            <p class="lmn-quryquestion">
+                <a href="{{href}}{{pitchurl}}/advicepitch/{{querydata.query_number}}">
+                    {{querydata.query}} </a>
+            </p>
+        </div>
+        <div class="col s12 m12 l12">
+            <query-stats querystats="queryStats"></query-stats>
+        </div>
+        </div>
+
+        <div class="col s12 m12 l12">
+            <div class="lmn-advcmmentbd" ng-repeat="conversation in conversationList">
+                <conversation conv="conversation"></conversation>
+            </div>
+        </div>
+        <div class="col s12 m12">
+            <comment queryid="gid" parentid='0' ng-if="showHideQueryDetail"></comment>
+        </div>
+        </div>
+
+<!--
+    <div class="col s12 m4">
+        <profile-detailpic profdet="querydata.created_by" creationdate="querydata.created_on"></profile-detailpic>
+    </div>
+    <div class="col s12 m5">
+        <query-stats querystats="queryStats"></query-stats>
+    </div>
+    <div  class="col s12 m3">
+        <div ng-if="permission=='yes'">
+            <span>Pending</span>&nbsp;&nbsp;&nbsp;<span>
+                 <switch id="enabled" name="enabled" ng-model="switch.enable" class="blue"  ng-change="changestatus(querydata.startup_id._id,queryStats.insightId,switch.enable)"></switch></span>
+            <span>&nbsp;&nbsp;&nbsp;Closed</span>
+        </div>
+    </div>
+    <div class="col s12 m12 l12">
+        <div class="query-box lmn-clphading " >
+            <a href="{{href}}{{pitchurl}}/advicepitch/{{querydata.query_number}}">
+                {{querydata.query}} </a>
+            <p class="lmn-querypn"><b>Query status:</b>{{querydata.query_status}}</p>
+            <div class="lmn-editdelet" ng-if="permission=='yes' " >
+                <div class="query"  confirmed-click="deletquery(querydata)"  ng-confirm-click="You want to delete Query?"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                <div class="queryedit" ng-if="querydata.conversations_count==0">
+                    <a  modal open="editQury" href="#editQury"></a>
+                    <i class="fa fa-pencil" aria-hidden="true" ng-click="modaleditFun(querydata)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m12 l12 ">
+        <div class="lmn-advcmmentbd" ng-repeat="conversation in conversationList">
+            <conversation conv="conversation"></conversation>
+        </div>
+        <comment queryid="gid" parentid='0' ng-if="showHideQueryDetail"></comment>
+    </div>
+-->
+</div>
+<!-- Modal Create query Form -->
+<div id="editQury" class="modal">
+    <div class="modal-content">
+        <div class="close-modal modal-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <form name="urlForm" novalidate ng-submit="editquery(queryEdit.startup_id._id,gid,queryEdit.query)">
+            <div class="input-field col s12"><!--{{queryEdit.startup_id[0]._id}}--><!--{{queryEdit2}}===>-->
+                <input type="hidden" ng-model="queryEdit.startup_id"/><!--{{queryEdit.query}}************-->
+                <input type="hidden" ng-model="queryEdit.insight_id"/>
+                <!-- <input type="hidden" ng-model="querydata.startupstatus"/>-->
+                <textarea id="textarea2" class="materialize-textarea" length="120" required ng-model="queryEdit.query"></textarea>
+            </div>
+            <div class="s12 right">
+                <button type="submit"   class="waves-effect waves-light btn lmn-mbtart modal-close" >Edit Query</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+    });
+</script>

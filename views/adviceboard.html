@@ -1,0 +1,211 @@
+
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+<!--BREADCRUMS DIRECTIVE-->
+<startupdetailheader data="startupdetail"></startupdetailheader>
+
+<section>
+	<div class="container cnt">
+ 	 	<div class="lmn-box ">
+   			 <div class="row">
+	   			  <div class="col s12 m12 l12">
+		        	<H5 class="lmn-advhdtxt">SUMMARY</H5>
+		        </div>
+   			  	<div class="col s12  m12 l12 ">
+	   			 	<div class="owl-carousel" id="owl-summary">
+		<!--******** ITEM ONE************-->
+		        <!-- <div class="item col m12 s12 l12">
+		        	<div class="card lnmcard lnmcard-bdr1">
+		            <div class="card-content lnmcard-content c1">
+		              <span class="card-title lmn-card-title">Total Startups</span>
+		            </div>
+		            <div class="card-action crd-act1">
+		              <a href="#">48,500</a>
+		            </div>
+		          </div>
+		        </div> -->
+		 <!--******** ITEM TWO************-->
+		        <!-- <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr2">
+		            <div class="card-content lnmcard-content c2">
+		              <span class="card-title lmn-card-title">Rated Startups</span>
+		            </div>
+		            <div class="card-action crd-act2">
+		              <a href="#">48,000</a>
+		            </div>
+		          </div>
+	        </div> -->
+	      <!--******** ITEM THREE************-->
+	        <!-- <div class="item col m12 s12 l12"> 
+	        	<div class="card lnmcard lnmcard-bdr3">
+		            <div class="card-content lnmcard-content c3">
+		              <span class="card-title lmn-card-title">Total Mentors</span>
+		            
+		            </div>
+		            <div class="card-action crd-act3">
+		              <a href="#">80,000</a>
+		            </div>
+		          </div>
+	        </div> -->
+	       <!--******** ITEM FOUR************-->
+	        <!-- <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr4">
+		            <div class="card-content lnmcard-content c4">
+		              <span class="card-title lmn-card-title">Rated Mentors</span>
+		            </div>
+		            <div class="card-action crd-act4">
+		              <a href="#">50,000</a>
+		            </div>
+		          </div>
+	        </div> -->
+	      <!--******** ITEM FIVE************-->
+	       
+		       <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr1">
+		            <div class="card-content lnmcard-content c1">
+		              <span class="card-title lmn-card-title">Conversations</span>
+		            </div>
+		            <div class="card-action crd-act1">
+		              <a href="#">150</a>
+		            </div>
+		          </div>
+	        </div>
+	         <!--******** ITEM SIX************-->
+	        <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr2">
+		            <div class="card-content lnmcard-content c2">
+		              <span class="card-title lmn-card-title">Mentor Insights</span>
+		            </div>
+		            <div class="card-action crd-act2">
+		              <a href="#">75</a>
+		            </div>
+		          </div>
+	        </div>
+
+	        <!--******** ITEM THREE************-->
+	        <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr4">
+		            <div class="card-content lnmcard-content c4">
+		              <span class="card-title lmn-card-title">Startup Kudos</span>
+		            </div>
+		            <div class="card-action crd-act4">
+		              <a href="#">50</a>
+		            </div>
+		          </div>
+	        </div>
+
+	         <!--******** ITEM SEVEN************-->
+	        <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr3">
+		            <div class="card-content lnmcard-content c3">
+		              <span class="card-title lmn-card-title">Pending Queries</span>
+		            </div>
+		            <div class="card-action crd-act3">
+		              <a href="#">40</a>
+		            </div>
+		          </div>
+	        </div>
+	         <!--******** ITEM EIGHT************-->
+	        <!-- <div class="item col m12 s12 l12">
+	        	<div class="card lnmcard lnmcard-bdr4">
+		            <div class="card-content lnmcard-content c4">
+		              <span class="card-title lmn-card-title">Number of Mentor Quests</span>
+		            </div>
+		            <div class="card-action crd-act4">
+		              <a href="#">30</a>
+		            </div>
+		          </div>
+	        </div> -->
+	        </div>
+				 </div>
+   			 </div>
+   		</div>
+   	</div>
+   	<div class="container cnt">
+ 	 	<div class="lmn-box ">
+   			 <div class="row">
+	   			  <div class="col s12 m4 l4">
+	   			  	 <ul class="tabs lmn-tabs">
+				        <li class="tab col s4  lmn-tab"><a  href="#test2">Conversations Feed</a></li>
+				        <!-- <li class="tab col s4  lmn-tab"><a href="#test3">Mentor Feedback</a></li> -->
+				      </ul>
+				      </div>
+				      <div class="col s12 m4 l4 offset-m1 offset-l1 ">
+				      	<select class="browser-default" ng-change="fourfive(querystatus)" ng-init="querystatus=3" ng-model="querystatus">
+						    <option value="1">All Queries </option>
+						    <option value="2">Closed Queries</option>
+						    <option value="3" selected>Pending Queries </option>
+						</select>
+				      </div>
+						<div class="col s12 m3 l3">
+							<a href="#creatquryModal" modal open="openModal"></a>
+							<!-- ng-click="openModal=true" -->
+							<div ng-click="checklogindata()" ><a class="waves-effect waves-light btn " >Post Query</a></div>
+						</div>
+				       <div id="test2" class="col s12">
+						   <div class="collapsible onhover-del" ng-repeat="listq in listquestion"  ng-if="listquestion.length>0">
+							    <query-list querydata="listq" pitchurl="pitchurl" gid="listq._id" ></query-list>
+						   <!--{{listq}}-->
+                           </div>
+						   <div ng-if="listquestion.length==0" class="lmn-nodata"> Post Query. No Query is there to display</div>
+				       </div>
+					 <!--  <div id="test3" class="col s12">
+					   	<p> tab 3</p>
+					   </div>-->
+	   		</div>
+	   	</div>
+		</div>
+ </section>
+
+
+<!-- Modal Create query Form -->
+<div id="creatquryModal" class="modal">
+	<div class="modal-content">
+		<div class="close-modal modal-close">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+		<form name="urlForm" novalidate ng-submit="createquery(query)">
+			<div class="input-field col s12">
+				<textarea id="textarea1" class="materialize-textarea" placeholder="Enter your Query" length="120" required ng-model="query.question"></textarea>
+				<!--<label>Query Board</label>-->
+			</div>
+			<div class="s12 right">
+				<button type="submit"   class="waves-effect waves-light btn lmn-mbtart modal-close" >Post Query</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('input#input_text, textarea#textarea1').characterCounter();
+});
+	var owl = $('#owl-summary');
+		owl.owlCarousel({
+			items:4,
+			loop:true,
+			margin:0,
+		  	itemsDesktop : [1199,4],
+		  	itemsDesktopSmall : [979,4],
+		  	autoplay:true,
+		  	pagination : true,
+		  	paginationNumbers: false
+		});
+		 $('ul.tabs').tabs();
+		 $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+		/*  CKEDITOR.replace( 'editor2', {
+           height: 150,
+           /!* Default CKEditor styles are included as well to avoid copying default styles. *!/
+           contentsCss: [ 'http://cdn.ckeditor.com/4.4.6/standard-all/contents.css', 'http://sdk.ckeditor.com/samples/assets/css/classic.css' ]
+       } );
+		   CKEDITOR.replace( 'editor3', {
+           height: 150,
+           /!* Default CKEditor styles are included as well to avoid copying default styles. *!/
+           contentsCss: [ 'http://cdn.ckeditor.com/4.4.6/standard-all/contents.css', 'http://sdk.ckeditor.com/samples/assets/css/classic.css' ]
+       } );*/
+</script>

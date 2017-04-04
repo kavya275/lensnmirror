@@ -1,0 +1,73 @@
+{
+  "requestMessage": "startupdetaillist",
+  "requestId": "53",
+  "response": "success",
+  "responseCode": "200",
+  "result": "yes",
+  "resultData":[
+    {
+      "startups":[{
+        "startupId":"1",
+        "startupname":"Glukocare",
+        "startuptagline":"Diabaties care personalized",
+         "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/glukocare.jpg",
+        "startupratingnum":"70",
+        "rating":"70",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      },{
+        "startupId":"4",
+        "startupname":"Secure valet",
+         "startuptagline":"Just drive, never park",
+         "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/secure-valet.jpg",
+          "startupratingnum":"300",
+          "rating":"300",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      },{
+        "startupId":"5",
+        "startupname":"XtraBux",
+         "startuptagline":"Apna time apni kamai",
+          "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/xtrabux.jpg",
+          "startupratingnum":"2500",
+           "rating":"2500",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      }
+      ,{
+        "startupId":"3",
+        "startupname":"PICUS",
+         "startuptagline":"Distances just dont Matter",
+         "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/picus.jpg",
+        "startupratingnum":"80",
+        "rating":"80",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      },
+      {
+        "startupId":"2",
+        "startupname":"Habinet",
+         "startuptagline":"Re-enforce Bond with Nature",
+         "idea_logo": "http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/habinet.jpg",
+          "startupratingnum":"25",
+          "rating":"25",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      },
+      {
+        "startupId":"6",
+        "startupname":"Fuuchsia ",
+         "startuptagline":"Personalize your footwear",
+         "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/fuuchsia.jpg",
+          "startupratingnum":"800",
+          "rating":"800",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      },
+      {
+        "startupId":"7",
+        "startupname":"Funtube",
+         "startuptagline":"Entertainment during boring commute",
+          "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/funtube.jpg",
+          "startupratingnum":"60",
+           "rating":"60",
+        "startupdescription":"I am a very simple card I am good at containing small bits of information I am convenient because I require little markup to use effectively"
+      }
+      ]
+    }
+]
+}

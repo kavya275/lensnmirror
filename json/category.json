@@ -1,0 +1,22 @@
+{
+  "response": "success",
+  "result": "yes",
+  "resultData": [
+    {
+      "categories": [
+        {
+          "_id": "582c5063f5289b3028f40e9d",
+          "category_name": "Nano Tech",
+          "category_seo_url": "nano-tech",
+          "is_active": "yes"
+        },
+        {
+          "_id": "582c5063f5289b3028f65b9f",
+          "category_name": "Bio Tech",
+          "category_seo_url": "bio-tech",
+          "is_active": "yes"
+        }
+      ]
+    }
+  ]
+}

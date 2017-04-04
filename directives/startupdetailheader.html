@@ -1,0 +1,131 @@
+<section class="lnm-productsdlt">
+	<div class="container container-breadcrums">
+		<div class="row ">
+	        <div class="col s12 m12 l12">
+	        	<div class="col s4 m2 l2 lmn-ctnimg no-padding" ><!--====>{{data}}-->
+					<!--{{imageUrl}}{{data.startup_logo}}-->
+					<div ng-if="permission=='no'">
+						<a href="#modalimgUpload" modal open="modalimgUpload" ></a>
+						<div  ng-click="openImageUpload('profile')" >
+							<img on-error="assets/images/defaulterror/default-logo.png"  ng-src="{{imageUrl}}{{profileImage}}" class="lmn-crleimg"/>
+						</div>
+					</div><!--mmmmmmmmm===>{{permission}}-->
+					<div ng-if="permission=='yes'">
+						<a href="#modalimgUpload" modal open="modalimgUpload" ></a>
+						<div  ng-click="openImageUpload('profile')">
+							<img on-error="assets/images/defaulterror/default-logo.png"  ng-src="{{imageUrl}}{{profileImage}}" class="lmn-crleimg"/>
+						</div>
+					</div>
+					<div  ng-if="permission=='no'">
+					   <button ng-click="openImageUpload('cover')" >Thumbnail</button>
+					</div>
+					<div  ng-if="permission=='yes'">
+						<button ng-click="openImageUpload('cover')" >Thumbnail</button>
+					</div>
+				</div>
+	        	<div class="col s8 m8 l8">
+	        		<p class="lmn-pdideatlt"><!--{{data}}-->
+						<a href="#" ng-if="permission=='yes'"
+						   editable-text="data.startup_name"
+						   onbeforesave="saveDetail($data,'startup_name')">{{ data.startup_name || "empty" }}</a>
+						<span ng-if="permission=='no'">{{data.startup_name}}</span>
+					</p>
+	        		<p class="lmn-pddeattagline startupword-wrap">
+						<a href="" ng-if="permission=='yes'" editable-text="data.tag_line" onbeforesave="saveDetail($data,'tag_line')">{{ data.tag_line || "empty" }}</a>
+                        <span ng-if="permission=='no'">{{data.tag_line}}</span>
+					</p>
+	        		<div class="lmn-pddeattagline ">
+						<div ng-if="permission=='no'">{{data.category_name}}</div>
+						<a href="#" ng-if="permission=='yes'" editable-select="data.category_seo_url" onshow="loadCategories()" onbeforesave="saveDetail($data,'category_name')"
+						   e-ng-options="g.category_seo_url as g.category_name for g in categoriesList">
+							{{ data.category_name || 'not set' }}
+						</a>
+					</div>
+	        		<p class="lmn-pddeattaglinecnt startupword-wrap">
+						<a href="#" ng-if="permission=='yes'"
+						   editable-text="data.brief_description"
+						   onbeforesave="saveDetail($data,'brief_description')">
+						{{data.brief_description|| "empty" }}</a>
+							<span ng-if="permission=='no'">{{data.brief_description}}</span>
+					</p>
+	        	</div>
+	        	<center><div class="col l2 m2 s12 mt10-lmn" >
+        	<!--	  <div class="c100 p100 large" style="margin-left: 35px;">&lt;!&ndash;{{data.rating}}&ndash;&gt;
+	                    <span class="lmn-breadcrumspanln">0</span>
+	                    <div class="slice">
+	                        <div class="bar"></div>
+	                        <div class="fill"></div>
+	                    </div>
+	                </div>
+	                <div class="clear"></div>
+	                <p class="lmn-pddeattagline lmntab-pddeattagline">Total Rating</p>-->
+	                 <!--...........{{permission}}-->
+					<!-- Switch  -->
+					<div ng-if="permission=='yes'">
+					<!--<p class="lmn-pddeattagline startupword-wrap">Make Public</p>-->
+						<!--<div class="switch" >
+							<p class="lmn-pddeattagline startupword-wrap">Publish</p>
+							<label class="lmn-swtchlab">
+								yes
+									<input type="checkbox" >
+									<span class="lever" ></span>
+								No
+							</label>
+							<br>
+							<pre>{{ status }}</pre>
+						</div>
+-->
+						<!--{{data}}-&#45;&#45;-->
+						<p class="lmn-pddeattagline startupword-wrap">Publish</p>
+						    <span class="lmn-swtchlab">No</span>&nbsp;&nbsp;&nbsp;<span>
+						    <switch id="enabled" name="enabled" ng-model="switch.enable" class="blue"  ng-change="changeCallback"></switch></span><span class="lmn-swtchlab">&nbsp;&nbsp;&nbsp;Yes</span>
+						<!--*****{{data.varswt}}-->
+						<!--*****{{data.startup_publish}}-->
+						<!--====>{{data}}-->
+						<form>
+							<button type="submit" class="waves-effect waves-light btn lmn-startupdlt"confirmed-click="deletstartup()"  ng-confirm-click="You want to delete Startup Pitch?"><i class="fa fa-trash" aria-hidden="true"></i></button>
+						</form>
+					</div>
+		        </div></center>
+	        </div>
+	        <div class="col s12 m12 l12 lmn-op">
+	        	<a href="{{href}}{{pitchurl}}/pitch"><div  class="col s12 m3 l2  lmn-wdthadj no-padding">
+	        		<p class="lmn-navtabs " ng-class="{'active':currentstate=='startupdetails'}">Story Board</p>
+	        	</div></a>
+	        	<a href="{{href}}{{pitchurl}}/transactionpitch"><div  class="col s12 m3 l3 no-padding">
+	        		<p class="lmn-navtabs" ng-class="{'active':currentstate=='transactionboard'}">Traction Board</p>
+	        	</div></a>
+	        	<a href="{{href}}{{pitchurl}}/ratingpitch"><div  class="col s12 m3 l2 no-padding">
+	        		<p class="lmn-navtabs"  ng-class="{'active':currentstate=='ratingboard'}"> Ratings Board</p>
+	        	</div></a>
+	        	<a href="{{href}}{{pitchurl}}/advicepitch"><div  class="col s12 m3 l3 no-padding">
+	        		<p class="lmn-navtabs" ng-class="{'active':currentstate=='adviceboard'}">Insights Board</p>
+	        	</div></a><!--OOOOOOOOOOOO{{href}}/{{pitchurl}}/advicepitch-->
+	        </div>
+	    </div>
+	 </div>	
+</section>
+
+<!-- Modal Artefacts Form Structure -->
+<div id="modalimgUpload" class="modal">
+	<div class="modal-content">
+		<form name="arifcatform" ng-submit="uploadimg(user)">
+			<!--<div class="file-field input-field s12">
+				<div class="btn">
+					<span>File</span>
+					<input type="file"  >
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate"  ng-model="user.uploadimg" base-sixty-four-input multiple="false" required type="text" placeholder="Profile and cover image">
+				</div>
+			</div>-->
+			<div class="brws-btn">
+				<span>Browse</span>
+				<input type="file" ng-model="user.uploadimg" base-sixty-four-input multiple="false" required>
+			</div>
+			<div class="s12 right">
+				<button type="submit"  class="waves-effect waves-light btn lmn-mbtart  modal-close">send</button>
+			</div>
+		</form>
+	</div>
+</div>

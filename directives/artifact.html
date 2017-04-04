@@ -1,0 +1,54 @@
+<div class=" col s12 m12 " >
+<!--{{artifactdata}}-->
+    <div class="owl-carousel" data-options="{items:3,pagination: true,navigation: false}" id="owl-demo2">
+
+    <!--ng-repeat="artifact in artifctdata"-->
+    <div class="item"   owl-carousel ng-repeat="artifact in artifctdata">
+        <div class="card lmn-arf-text "><!--lmn-arifactmh-->
+            <div class="card-content onhover-del " ng-class="lmn-arfictbg">
+                <div ng-if="permission=='yes'">
+                    <div>
+                        <a  modal open="modalArtifactedit" href="#modalArtifactedit"></a>
+                        <div class="artifact-edit" ng-click="modalArtifactFun(artifact,artifact.artifact_id)">
+                            <div ><i class="fa fa-pencil icon-del" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{artifact.artifact_link}}" target="_blank">
+                <!--<p>{{artifact.artifact_title}}</p>-->
+                <p><!--{{artifact.artifact_link}}--></p>
+                    <img on-error="assets/images/defaulterror/default-logo.png"  ng-src="{{imageUrl}}{{artifact.artifact_image}}" class="responsive-img"/>
+               <!-- <p class="lmn-arfectcnt">{{artifact.artifact_desc}}</p>-->
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal Artefacts Form Structure -->
+    <div id="modalArtifactedit" class="modal">
+        <div class="modal-content">
+            <div class="close-modal modal-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="lmnstfm-hd">Edit Artifact</div>
+            <div class="lmn-modleedit" confirmed-click="deleteArtifact(artifact.artifact_id)" ng-confirm-click="You want to delete Artifact?">
+                <div><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+            </div>
+            <form name="arifcatform" ng-submit="saveArtifact(users)">
+                <div input-field class="s12" >
+                    <input type="text" ng-model="users.artifacturl"><!--*********{{users.artifact_link}}-->
+                    <input type="hidden" ng-model="users.artifactId">
+                    <label>Artefact Url</label>
+                </div>
+                <!--<div input-field class="s12">
+                    <input type="text" >
+                    <label>Artefact Description</label>
+                </div>-->
+                <div class="s12 right">
+                    <button type="submit"  class="waves-effect waves-light btn lmn-mbtart  modal-close">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>

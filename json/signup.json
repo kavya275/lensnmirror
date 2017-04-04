@@ -1,0 +1,17 @@
+{
+  "requestMessage": "usersignup",
+  "requestId": "102",
+  "response": "success",
+  "responseCode": "200",
+  "result": "yes",
+  "resultData": [
+    {
+      "user_id": "123456",
+      "session_id": "1456463",
+      "name": "Vijay Kumar",
+      "email": "test@creatise.in",
+      "email_verified": "no",
+      "role": "mentor"
+    }
+  ]
+}

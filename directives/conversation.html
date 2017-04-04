@@ -1,0 +1,61 @@
+<div class="row comment_holder">
+    <div class="comment_profile_text">
+    <div class="col s11 ">
+        <div class="comment_profil_pic">
+            <profile-detailpic profdet="conv.created_by" status="" creationdate="conv.created_on"></profile-detailpic>
+        </div>
+        <div class="comment_display">
+            {{conv.conversation_text}}
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="col s1"><!-- {{permission}}*** -->
+        <div><!--ng-if="permission=='yes'"--><!-- {{permission=='yes'}}==> -->
+            <div  confirmed-click="deletconverstion(conv.insight_id,conv._id)" ng-confirm-click="You want to delete conversation?">
+                <div class="lmn-comment"><i class="fa fa-trash-o " aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12">
+        <div class="query_stats_holder left">
+            <div class="stats" ng-click="loadConversations(conv.insight_id,conv._id)" ng-if="conv.replies_count>0">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                <span class="lmn-starticommnt">{{conv.replies_count}} &nbsp;Comments</span>
+            </div>
+
+            <!--
+            <span class="lmn-cmtboxlk">100 <i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp; </span>
+            <span class="lmn-cmtboxlk">25 <i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; </span>
+            <span class="lmn-cmtboxlk">10 <i class="fa fa-lightbulb-o" aria-hidden="true"></i>&nbsp; </span>
+            -->
+
+            <div class="stats" ng-click="showHideReply()">
+                <i class="fa fa-reply" aria-hidden="true" ></i>
+                <span class="lmn-startinsight">Reply</span>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 reply_holder" ng-class="{'show_comment':showReply}" ng-if="showReply==true">
+        <!--<comment queryid="conv.insight_id" parentid='conv._id'></comment>&lt;!&ndash;{{conv.insight_id}}*****&ndash;&gt;-->
+
+        <form  class=" comment_form" ng-submit="createcomment(comment,conv._id,conv.insight_id)">
+            <div class="col l11 m11 s11 lmn-qprft">
+                <div class="comment_box ">
+                    <textarea id="textarea5" class="materialize-textarea "  ng-model="comment.textarea" placeholder="Reply to this comment"></textarea>
+                </div>
+            </div>
+            <div class="col l1 m1 s1 lmn-qplft">
+                <button class="waves-light btn-flat lmn-commnntsend" type="submit"><i class="fa fa-share-square" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
+
+    </div>
+        <div class="clear"></div>
+    </div>
+    <div class="col s12 spl_class_test">
+    </div>
+    <!--<div  confirmed-click="" ng-confirm-click="You want to delete Artifact?">
+        <div class="lmn-comment"><i class="fa fa-trash-o " aria-hidden="true"></i></div>
+    </div>-->
+</div>

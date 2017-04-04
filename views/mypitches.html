@@ -1,0 +1,26 @@
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+<section class="lnm-startups">
+    <div class="container lmn-box cnt">
+        <div class="row">
+                <!--<div class="col s12" ng-if="startups.length>0">
+                    <div class="col s12 m6 l4" ng-repeat="startuplist in startups">
+                        <startup-pitch-list startupdata="startuplist" href="urls"></startup-pitch-list>
+                    </div>
+                </div>
+                <div ng-if="startups.length==0">NO STARTUP FOUND</div>-->
+            <div class="col s12">
+                <div class="lmn-tophdall">My Own Pitches</div>
+            </div>
+            <div  class="col s12">
+                <div class="col s12 m6 l4" ng-repeat="startuplist in mystartups">
+                     <startup-pitch-list startupdata="startuplist" href="urls"></startup-pitch-list>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER DIRECTIVE-->
+<footer></footer>

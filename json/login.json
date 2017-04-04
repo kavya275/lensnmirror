@@ -1,0 +1,17 @@
+{
+  "requestMessage": "userlogin",
+  "requestId": "103",
+  "response": "success",
+  "responseCode": "200",
+  "result": "yes",
+  "resultData": [
+    {
+      "user_id": "123456",
+      "session_id": "1456463",
+      "name": "asfavvfbsdbf",
+      "email": "kavyakav",
+      "email_verified": "no",
+      "role": "startup"
+    }
+  ]
+}

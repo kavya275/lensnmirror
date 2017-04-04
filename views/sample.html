@@ -1,0 +1,191 @@
+<section>
+    <div class="container cnt">
+        <div class="lmn-box ">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="col s12 m2 l2 ">
+                        <ul class="tabs lmn-tabs ">
+                            <li class="tab   lmn-tab"><a  href="#test2">Query</a></li>
+                            <!-- <li class="tab col s4  lmn-tab"><a href="#test3">Mentor Feedback</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="col s12 m2 l2 offset-m6 offset-l6">
+                        <select class="browser-default" >
+                            <option value="1">All Queries </option>
+                            <option value="2">Closed Queries</option>
+                            <option value="3" selected>Pending Queries </option>
+                        </select>
+                    </div>
+                    <div class="col s12 m2 l2 ">
+                        <div><a class="waves-effect waves-light btn lmn-postquey">Post Query </a></div>
+                    </div>
+                </div>
+                <div id="test2" class="col s12">
+                    <div class="row " style="padding:10px;">
+                        <div class="col s12 m8">
+                            <div class="user_display">
+                            <div class="profile_pic {{profdet.role}}">
+                                <img src="assets/images/defaulterror/default-logo.png" >
+                            </div>
+                            <div class="user_detail">
+                                <div class="user_name">Divya</div>
+                                    <div class="date_time">
+                                        <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;27-05</span>
+                                        <span>Query Status:</span><span class="lmn-querycl">Closed</span>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3 offset-m1">
+                            <span class="lmn-pc">Pending <switch id="enabled" name="enabled" ng-model="switch.enable" class="blue" ></switch>Cancel</span>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <p class="lmn-quryquestion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <div class="query_stats_holder">
+                                <div class="stats">
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                    <span class="lmn-starticommnt">0 &nbsp;Comments</span>
+                                </div>
+                                <div class="stats" ng-click="updateStats('likes_count',user_like)">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true" ng-class="(user_like=='yes') ? 'active':''"></i>
+                                    <span class="lmn-startlins">0&nbsp; Likes</span>
+                                </div>
+                                <div class="stats" ng-click="updateStats('kudos_count',user_kudos)">
+                                    <i class="fa fa-trophy" aria-hidden="true"  ng-class="(user_kudos=='yes') ? 'active':''"></i>
+                                    <span class="lmn-startkudos">0&nbsp; Kudos</span>
+                                </div>
+                                <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+                                    <i class="fa fa-lightbulb-o" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                                    <span class="lmn-startinsight">0 Insights</span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col s12 m12 l12 ">
+                        <div class="" >
+                            <div class="row comment_holder ">
+                                <div class="col s12 m1 ">
+                                    <div class="user_display">
+                                        <div class="profile_pic ">
+                                          <center>  <img src="assets/images/defaulterror/default-logo.png" class="lmnqtml"></center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10">
+                                    <div class="col s12 m12 l12">
+                                        <div class="user_detail">
+                                            <div class="lmn-commntusr">kavya</div>
+                                        </div>
+                                        <p class="lmn-mtmbqry"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                    </div>
+                                    <div class="col s12 m12 l12">
+                                        <div class="query_stats_holder">
+                                            <div class="stats">
+                                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                                <span class="lmn-starticommnt">0 &nbsp;Comments</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('likes_count',user_like)">
+                                                <i class="fa fa-thumbs-up" aria-hidden="true" ng-class="(user_like=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startlins">0&nbsp; Likes</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('kudos_count',user_kudos)">
+                                                <i class="fa fa-trophy" aria-hidden="true"  ng-class="(user_kudos=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startkudos">0&nbsp; Kudos</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+                                                <i class="fa fa-lightbulb-o" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startinsight">0 Insights</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+                                                <i class="fa fa-reply" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startinsight">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <form  class="row ">
+                                            <div class="col l12 m11 s11">
+                                                <div class="comment_box ">
+                                                    <textarea id="textarea4" class="materialize-textarea "  placeholder="Add comment here"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col l12 m1 s1">
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col s12 m12 l12 ">
+                        <div class="" >
+                            <div class="row comment_holder ">
+                                <div class="col s12 m1 ">
+                                    <div class="user_display">
+                                        <div class="profile_pic ">
+                                            <center>  <img src="assets/images/defaulterror/default-logo.png" class="lmnqtml"></center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10">
+                                    <div class="col s12 m12 l12">
+                                        <div class="user_detail">
+                                            <div class="lmn-commntusr">Divya</div>
+                                        </div>
+                                        <p class="lmn-mtmbqry"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                    </div>
+                                    <div class="col s12 m12 l12">
+                                        <div class="query_stats_holder">
+                                            <div class="stats">
+                                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                                <span class="lmn-starticommnt">0 &nbsp;Comments</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('likes_count',user_like)">
+                                                <i class="fa fa-thumbs-up" aria-hidden="true" ng-class="(user_like=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startlins">0&nbsp; Likes</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('kudos_count',user_kudos)">
+                                                <i class="fa fa-trophy" aria-hidden="true"  ng-class="(user_kudos=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startkudos">0&nbsp; Kudos</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+                                                <i class="fa fa-lightbulb-o" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startinsight">0 Insights</span>
+                                            </div>
+                                            <div class="stats" ng-click="updateStats('insights_count',user_insight)">
+                                                <i class="fa fa-reply" aria-hidden="true" ng-class="(user_insight=='yes') ? 'active':''"></i>
+                                                <span class="lmn-startreply">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col s12">
+                                        <form  class="row comment_form">
+                                            <div class="col l11 m11 s11 lmn-qprft">
+                                                <div class="comment_box ">
+                                                    <textarea id="textarea5" class="materialize-textarea "  placeholder="Add comment here"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col l1 m1 s1 lmn-qplft">
+                                                <button class="waves-light btn-flat lmn-commnntsend"><i class="fa fa-share-square" aria-hidden="true"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               <!-- <div id="test3" class="col s12">
+                    tab content 3
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $('ul.tabs').tabs();
+</script>

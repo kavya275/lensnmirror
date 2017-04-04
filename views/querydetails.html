@@ -1,0 +1,48 @@
+
+<!--HEADER DIRECTIVE-->
+<homenav></homenav>
+
+<!--BREADCRUMS DIRECTIVE-->
+<startupdetailheader data="startupdetail"></startupdetailheader>
+<section>
+    <div class="container lmn-box cnt">
+        <div class="row mbt-0" >
+            <div class="col s12 m12">
+                <p class="lmn-breadcrum"><a href="#">Home</a> >> <a ui-sref="startsups">Startups</a> >> <a href="{{href}}{{pitchurl}}/advicepitch">Insight Board </a> >> <a href="" ng-repeat="instdt in inqdetails"> {{instdt.query }}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container cnt"><!--*********************{{inqdetails}}-->
+        <div class="lmn-box ">
+            <div class="row">
+                <div id="test2" class="col s12">
+                    <div class="onhover-del">
+                        <div class="row">
+                            <div class="col s12 m12 l12" ng-repeat="instdt in inqdetails">
+                            <query-list querydata="instdt" pitchurl="pitchurl" gid="instdt._id">
+                                <!--{{gid}}***-->
+                            </query-list>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div >
+        <div>
+
+        </div>
+    </div>
+</section>
+<!--FOOTER DIRECTIVE-->
+<footer></footer>
+

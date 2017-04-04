@@ -1,0 +1,16 @@
+{
+  "idea": "PICUS",
+  "idea_logo":"http://demo.creatise.in/lensnmirror/assets/images/startup/startuplogs/picus.jpg",
+  "rating":"80",
+  "tag_line": "Distances just don’t matter!",
+  "storyboard": [
+    {
+      "problem_description": "Parents and grandparents who are staying in India and are not tech savvy need a solution that will allow them to connect with their near and dear ones (son’s/daughter’s) who are staying abroad. Today, pictures of near and dear ones are put up on static wall frames and a solution is required to bring static wall frames to life!",
+      "target_customers": "Our target customers are kids (son’s/daughter’s in the age group above 21 years) who are staying abroad and want to keep in touch with their parents and grandparents staying in India virtually in real time",
+      "solution_summary": "PICUS is the next generation WiFi digital wall frame, where pictures shared by kids staying abroad via PICUS mobile app are displayed in real time",
+      "value_proposition": "Allow kids who are staying abroad to share their pictures with their parents in India in real timeAllow parents to view pictures sent by their kids in real time via our PICUS WiFi digital wall frame Ease of use No noisy clutter that happens in social media such as Facebook. This will be your very own private and secure way to stay connected with people who matter to you the most.",
+      "unfair": "unfair",
+      "monetization": "monetization"
+    }
+  ]
+}
